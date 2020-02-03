@@ -1,8 +1,10 @@
+// require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby x Tailwind x Framer Motion`,
-    description: `An opinionated starter for Gatsby v2 with TailwindCSS, PostCSS and Framer Motion page transitions.`,
-    author: `@samuelgoddard`,
+    title: `Formula One Gym`,
+    description: `Nottingham's favourite city centre gym`,
+    author: `@Zellenent`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,6 +24,21 @@ module.exports = {
         whitelistPatterns: [/is-active/],
       }
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `raleway\:300,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
+    // {
+    //   resolve: `gatsby-source-datocms`,
+    //   options: {
+    //     apiToken: process.env.DATO_API_KEY,
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
