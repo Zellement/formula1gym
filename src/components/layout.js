@@ -41,7 +41,9 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <div className="gradient--orange">
+        <Header siteTitle={data.site.siteMetadata.title} />
+      </div>
       <AnimatePresence>
         <motion.main
           key={location.pathname}

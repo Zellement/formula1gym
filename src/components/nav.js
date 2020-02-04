@@ -43,9 +43,6 @@ const Nav = class extends React.Component {
           <li>
             <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/join-now">Join Now</Link>
           </li>
-          <li>
-            <a target="_blank" rel="noreferrer noopener" onClick={this.toggleMenu} className="navigation-wrapper__link" href="https://github.com/samuelgoddard/gatsby-tailwind-motion/">Github <GoLinkExternal className="inline-block opacity-25 -mt-3px" /></a>
-          </li>
         </ul>
       </div>
       <div className={`${burgerActive} navigation-button`} onClick={this.toggleMenu}>

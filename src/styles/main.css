@@ -13,5 +13,8 @@
 @import './partials/_typography.css';
 @import './partials/_navigation.css';
 
+/* Custom */
+@import './partials/_custom.css';
+
 /* Tailwind Utils */
 @import 'tailwindcss/utilities';
