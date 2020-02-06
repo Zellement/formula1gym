@@ -15,6 +15,7 @@
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-source-prismic": "^2.3.0-alpha.3",
     "gatsby-transformer-sharp": "^2.3.14",
     "npm-check-updates": "^4.0.1",
     "prop-types": "^15.7.2",
@@ -25,6 +26,7 @@
     "tailwindcss-transitions": "^2.2.0"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "gatsby-plugin-purgecss": "^4.0.1",
     "postcss-import": "^12.0.1",
     "postcss-import-resolver": "^2.0.0",

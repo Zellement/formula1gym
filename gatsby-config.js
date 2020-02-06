@@ -1,4 +1,6 @@
-// require('dotenv').config();
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -32,6 +34,14 @@ module.exports = {
         ],
         display: 'swap'
       }
+    },
+    {
+      resolve: `gatsby-source-prismic`,
+      options: {
+        repositoryName: `formula1gym`,
+        accessToken: `${process.env.API_KEY}`,
+        //linkResolver: ({ node, key, value }) => post => `/${post.uid}`,
+      },
     },
     // {
     //   resolve: `gatsby-source-datocms`,

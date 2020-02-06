@@ -1,6 +1,8 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 import { motion } from 'framer-motion'
+import { HTMLContent } from '../components/content'
 
 const duration = 0.35
 
@@ -21,7 +23,10 @@ const item = {
   },
 }
 
-const IndexPage = () => {
+const IndexPage = ( {data} ) => {
+
+  const post = data.prismicHomepage
+
   return (
     <>
       <SEO title="Home" />
@@ -36,31 +41,48 @@ const IndexPage = () => {
           variants={item}
           transition="easeInOut"
         >
-          <p className="text-lg md:text-xl pl-3 border-l-2 border-black">An opinionated starter for Gatsby v2 with TailwindCSS, PostCSS and Framer Motion page transitions.</p>
+
+              {
+                post.data.how_it_works.map(how_it_works_data => (
+                  <div key={how_it_works_data.title.text}>
+                    <h2>How it works</h2>
+                    <h3>{how_it_works_data.title.text}</h3>
+                    <HTMLContent content={how_it_works_data.text.html} />
+                  </div>
+                ))
+              }
+
         </motion.div>
 
-        <motion.div 
-          className="content"
-          variants={item}
-          transition="easeInOut"
-        >
-          <hr className="block my-8" />
-        </motion.div>
-
-        <motion.div 
-          className="content"
-          variants={item}
-          transition="easeInOut"
-        >
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          <h2>Lorem ipsum dolor sit amet</h2>
-          
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </motion.div>
       </motion.section>
     </>
   )
 }
 
 export default IndexPage
+
+export const query = graphql`
+query ContactPage {
+  prismicHomepage {
+    id
+    uid
+    data {
+      how_it_works {
+        image {
+          alt
+          copyright
+          url
+        }
+        text {
+          html
+          text
+        }
+        title {
+          html
+          text
+        }
+      }
+    }
+  }
+}
+`
