@@ -7,7 +7,9 @@ Navigation
 	@apply
 		bg-white
 		fixed
-		transition
+		transition-all
+		duration-100
+		ease-in
 		top-0
 		left-0
 		p-6
@@ -44,7 +46,8 @@ Navigation
   	@apply
   		bg-black
   		fixed
-  		top-0
+		  top-0
+		  rounded-bl
   		right-0
   		w-12
   		h-12
@@ -73,26 +76,33 @@ Navigation
 		w-1/2
 		opacity-100
 		bg-white
-		transition;
+		transform
+		transition-all
+		duration-100
+		ease-in;
 	height: 2px;
 }
 
 .navigation-button.is-active {
 	@apply
-		bg-blue-300;
+		bg-white;
 }
 
 .navigation-button.is-active .navigation-button__line-1 {
 	@apply
+		transform
 		rotate-45
-		left-0;
+		left-0
+		bg-black;
 	margin-top: 2px;
 }
 
 .navigation-button.is-active .navigation-button__line-2 {
 	@apply
+		transform
 		-rotate-45
-		left-0;
+		left-0
+		bg-black;
 	margin-top: 10px;
 }
 
@@ -111,15 +121,19 @@ Navigation
 
 .navigation-button.is-active .navigation-button__line-5 {
 	@apply
+		transform
 		-rotate-45
-		right-0;
+		right-0
+		bg-black;
 	margin-top: 2px;
 }
 
 .navigation-button.is-active .navigation-button__line-6 {
 	@apply
+		transform
 		rotate-45
-		right-0;
+		right-0
+		bg-black;
 	margin-top: 10px;
 }
 

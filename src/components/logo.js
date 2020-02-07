@@ -30,7 +30,7 @@ const Logo = () => (
     variants={container}
     initial="hidden" 
     animate="visible"
-	width="100%" height="100%"
+	width="100%" height="100%" className="logo"
 	version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 5042.04 995.5">
         
         <motion.path 
