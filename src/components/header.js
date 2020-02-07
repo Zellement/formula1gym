@@ -8,12 +8,13 @@ import Logo from '../components/logo'
 const Header = ({ siteTitle }) => (
   <header className="p-6 md:py-12">
     
-    <div className="container">
+    <div className="container lg:flex lg:space-between">
       <div className="flex flex-wrap items-center">
 
         <Link to="/">
           <Logo />
         </Link>
+        
       </div>
 
       <Nav />

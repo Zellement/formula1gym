@@ -5,3 +5,13 @@
 .logo {
 	max-width: 230px;
 }
+
+.btn {
+	@apply rounded-full p-4 shadow transition-all transform duration-200 ease-in;
+	&-blue {
+		@apply bg-blue;
+	}
+	&:hover {
+		@apply bg-blue-dark;
+	}
+}
