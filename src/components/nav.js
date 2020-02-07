@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { GoLinkExternal } from 'react-icons/go';
 
 const Nav = class extends React.Component {
 
@@ -45,7 +44,7 @@ const Nav = class extends React.Component {
           </li>
         </ul>
       </div>
-      <div className={`${burgerActive} navigation-button`} onClick={this.toggleMenu}>
+      <div role="button" tabIndex="0" className={`${burgerActive} navigation-button`} onClick={this.toggleMenu} onKeyDown={this.toggleMenu}>
         <div className={`navigation-button__inside ${burgerActive}`}>
           <span className="navigation-button__lines navigation-button__line-1 left-0"></span>
           <span className="navigation-button__lines navigation-button__line-2 left-0 mt-2"></span>

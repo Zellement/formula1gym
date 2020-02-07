@@ -1,5 +1,9 @@
-.gradient--orange {
-	background: linear-gradient(180deg, #FF9900 0%, #FF6700 100%);
+.gradient-orange--vertical {
+	background-image: linear-gradient(180deg, #FF9900 0%, #FF6700 100%);
+}
+
+.gradient-orange--horizontal {
+	background-image: linear-gradient(90deg, #FF9900 0%, #FF6700 100%);
 }
 
 .logo {
@@ -13,5 +17,11 @@
 	}
 	&:hover {
 		@apply bg-blue-dark;
+	}
+}
+
+@responsive {
+	.no-bg {
+		background-image: none;
 	}
 }

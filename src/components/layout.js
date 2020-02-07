@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { motion, AnimatePresence } from 'framer-motion'
+import OpeningHours from "../components/opening-hours"
 
 import Header from "./header"
 import "../styles/main.css"
@@ -41,7 +42,8 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <div className="gradient--orange">
+      <div className="gradient-orange--vertical">
+        <OpeningHours />
         <Header siteTitle={data.site.siteMetadata.title} />
       </div>
       <AnimatePresence>

@@ -5,6 +5,9 @@ module.exports = {
         sans: [
           'Raleway',
         ],
+        display: [
+          'Sedgwick Ave'
+        ]
       },
       colors: {
         blue: {

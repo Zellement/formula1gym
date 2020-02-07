@@ -30,7 +30,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `raleway\:300,700` // you can also specify font weights and styles
+          `raleway\:300,700`,
+          `sedgwick ave\:300`
         ],
         display: 'swap'
       }
