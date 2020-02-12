@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 import { motion } from 'framer-motion'
 import { HTMLContent } from '../components/content'
+import HowItWorks from '../components/how-it-works'
 
 const duration = 0.35
 
@@ -23,9 +24,7 @@ const item = {
   },
 }
 
-const IndexPage = ( {data} ) => {
-
-  const post = data.prismicHomepage
+const IndexPage = ( ) => {
 
   return (
     <>
@@ -42,15 +41,7 @@ const IndexPage = ( {data} ) => {
           transition="easeInOut"
         >
 
-              {
-                post.data.how_it_works.map(how_it_works_data => (
-                  <div key={how_it_works_data.title.text}>
-                    <h2>How it works</h2>
-                    <h3>{how_it_works_data.title.text}</h3>
-                    <HTMLContent content={how_it_works_data.text.html} />
-                  </div>
-                ))
-              }
+          <HowItWorks />
 
         </motion.div>
 
@@ -61,28 +52,28 @@ const IndexPage = ( {data} ) => {
 
 export default IndexPage
 
-export const query = graphql`
-query ContactPage {
-  prismicHomepage {
-    id
-    uid
-    data {
-      how_it_works {
-        image {
-          alt
-          copyright
-          url
-        }
-        text {
-          html
-          text
-        }
-        title {
-          html
-          text
-        }
-      }
-    }
-  }
-}
-`
+// export const query = graphql`
+// query ContactPage {
+//   prismicHomepage {
+//     id
+//     uid
+//     data {
+//       how_it_works {
+//         image {
+//           alt
+//           copyright
+//           url
+//         }
+//         text {
+//           html
+//           text
+//         }
+//         title {
+//           html
+//           text
+//         }
+//       }
+//     }
+//   }
+// }
+// `
