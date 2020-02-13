@@ -42,7 +42,7 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <div className="gradient-orange--vertical">
+      <div className="">
         <OpeningHours />
         <Header siteTitle={data.site.siteMetadata.title} />
       </div>

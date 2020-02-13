@@ -1,9 +1,9 @@
 import React from "react"
-import { graphql } from 'gatsby'
+//import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 import { motion } from 'framer-motion'
-import { HTMLContent } from '../components/content'
 import HowItWorks from '../components/how-it-works'
+import Benefits from '../components/benefits'
 
 const duration = 0.35
 
@@ -33,13 +33,16 @@ const IndexPage = ( ) => {
         variants={container}
         initial="hidden" 
         animate="visible"
-        className="container"
       >
         <motion.div 
           className="content"
           variants={item}
           transition="easeInOut"
         >
+
+         
+      <div className="gradient-orange--vertical -mt-40 pt-40"> <Benefits /></div>
+
 
           <HowItWorks />
 
