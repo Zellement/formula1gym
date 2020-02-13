@@ -11,12 +11,18 @@
 }
 
 .btn {
-	@apply rounded-full p-4 shadow transition-all transform duration-200 ease-in;
+	@apply rounded-full p-4 shadow transition-all transform duration-200 ease-in font-bold;
 	&-blue {
 		@apply bg-blue;
+		&:hover {
+			@apply bg-blue-dark;
+		}
 	}
-	&:hover {
-		@apply bg-blue-dark;
+	&-orange {
+		@apply bg-orange text-white;
+		&:hover {
+			@apply bg-orange-semidark;
+		}
 	}
 }
 

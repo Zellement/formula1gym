@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 import { HTMLContent } from '../components/content'
+import QuickContactForm from '../components/quick-contact-form'
 
 const HowItWorks = ({ containerClass }) => {
 	const data = useStaticQuery(graphql`
@@ -49,6 +50,22 @@ const HowItWorks = ({ containerClass }) => {
       }
     }
   `)
+
+  // For the incremental numbers
+  var i = 1
+
+  function increaseCount(){
+    i++
+  }
+
+  function checkNumber(){
+    if (i === 1) {
+      return (
+        <QuickContactForm />
+      )
+    }
+  }
+
 	return (
 		<>
 			{data.allPrismicSiteSpecific.edges[0].node.data.body.map(
@@ -59,24 +76,27 @@ const HowItWorks = ({ containerClass }) => {
 
 							<BackgroundImage className={whyChooseData.primary.image_class.text + " w-full min-h-200 sm:min-h-250 md:w-1/2 bg-top"} fluid={whyChooseData.primary.image.localFile.childImageSharp.fluid}></BackgroundImage>
 
-							<div className="w-full md:w-1/2 p-4">
+							<div className="w-full p-8 md:w-1/2 md:p-12 lg:p-20">
 
-								<div className="flex">
-									<span className="rounded-full text-white w-50 h-50 bg-orange p-2 text-2xl font-display md:w-75 md:h-75 flex">
-										<span className="m-auto block">1</span>
+								<div className="flex mb-4">
+									<span className="rounded-full text-white w-50 h-50 min-w-50 bg-orange p-2 text-2xl font-display flex mr-4">
+										<span className="m-auto block">{i}</span>
 									</span>
 									<div className="flex flex-col">
-										<span className="font-bold">How it works</span>
-										<span className="text-2xl font-bold">{whyChooseData.primary.title.text}</span>
+										<span className="font-bold text-orange-semidark leading-tight">How it works</span>
+										<span className="text-2xl font-bold text-orange leading-tight">{whyChooseData.primary.title.text}</span>
 									</div>
 								</div>
 
-								<div className="">
+								<div className="max-w-lg">
 									<HTMLContent content={whyChooseData.primary.text.html} />
 								</div>
 
+                {checkNumber()}
+
 							</div>
 						</div>
+            {increaseCount()}
 					</div>
 				)
 			)}

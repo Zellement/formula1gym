@@ -19,6 +19,10 @@ module.exports = {
         '50': '50px',
         '75': '75px'
       },
+      minWidth: {
+        '50': '50px',
+        '75': '75px'
+      },
       fontFamily: {
         sans: [
           'Raleway',
@@ -34,7 +38,7 @@ module.exports = {
         },
         orange: {
           default: '#FF9900',
-          semidark: '#FF6700',
+          semidark: '#AD5E00',
         },
       },
     }
