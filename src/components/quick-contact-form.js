@@ -53,7 +53,7 @@ export default class Contact extends React.Component {
               <input className="bg-gray-300 flex-1 m-1 p-4 rounded-full" placeholder="Name" type="text" name="name" onChange={this.handleChange} />   
               <input className="bg-gray-300 flex-1 m-1 p-4 rounded-full" placeholder="Email"  type="email" name="email" onChange={this.handleChange} />
               <input className="bg-gray-300 flex-1 m-1 p-4 rounded-full" placeholder="Telephone" type="text" name="telephone" onChange={this.handleChange} />
-              <button className="btn btn-orange flex-1 m-1" type="submit">Book induction</button>
+              <button className="btn btn-orange flex-1 m-1" type="submit"><span className="whitespace-no-wrap">Book induction</span></button>
             </div>
         </form>
     );
