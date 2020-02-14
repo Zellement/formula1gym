@@ -37,10 +37,10 @@ module.exports = {
       },
       fontFamily: {
         sans: [
-          'Raleway'
+          'Raleway', 'sans-serif'
         ],
         display: [
-          'Sedgwick\\ Ave'
+          'Sedgwick\\ Ave', 'serif'
         ]
       },
       colors: {
