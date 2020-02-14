@@ -42,10 +42,10 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <div className="">
-        <OpeningHours />
-        <Header siteTitle={data.site.siteMetadata.title} />
-      </div>
+    <div className="gradient-orange--vertical">
+      <OpeningHours />
+      <Header siteTitle={data.site.siteMetadata.title} />
+    </div>
       <AnimatePresence>
         <motion.main
           key={location.pathname}

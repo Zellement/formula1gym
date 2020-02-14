@@ -1,16 +1,16 @@
 import React from "react"
 //import { graphql } from 'gatsby'
 import SEO from "../components/seo"
-import { motion } from 'framer-motion'
-import HowItWorks from '../components/how-it-works'
-import Benefits from '../components/benefits'
+import { motion } from "framer-motion"
+import HowItWorks from "../components/how-it-works"
+import Benefits from "../components/benefits"
 
 const duration = 0.35
 
 const container = {
   visible: {
     transition: {
-      when: 'beforeChildren',
+      when: "beforeChildren",
       staggerChildren: 0.2,
       delayChildren: duration,
     },
@@ -24,30 +24,35 @@ const item = {
   },
 }
 
-const IndexPage = ( ) => {
-
+const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <motion.section
-        variants={container}
-        initial="hidden" 
-        animate="visible"
-      >
-        <motion.div 
-          className="content"
+
+      <motion.section variants={container} initial="hidden" animate="visible">
+
+        <motion.div
+          className="gradient-orange--vertical-dark"
           variants={item}
           transition="easeInOut"
         >
 
-         
-      <div className="gradient-orange--vertical -mt-40 pt-40"> <Benefits /></div>
-
-
-          <HowItWorks />
+          <div className="container">
+            <Benefits />
+          </div>
 
         </motion.div>
 
+        <motion.div
+          className="container"
+          variants={item}
+          transition="easeInOut"
+        >
+
+          <HowItWorks />
+          
+        </motion.div>
+        
       </motion.section>
     </>
   )

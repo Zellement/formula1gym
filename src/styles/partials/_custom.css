@@ -1,5 +1,9 @@
 .gradient-orange--vertical {
-	background-image: linear-gradient(180deg, #FF9900 0%, #FF6700 100%);
+	background-image: linear-gradient(180deg, #FF9900 0%, #FF8500 100%);
+}
+
+.gradient-orange--vertical-dark {
+	background-image: linear-gradient(180deg, #FF8500 0%, #FF6700 100%);
 }
 
 .gradient-orange--horizontal {

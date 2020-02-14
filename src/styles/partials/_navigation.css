@@ -3,7 +3,7 @@ Navigation
 -------------------------- */
 
 .navigation-wrapper {
-	@apply bg-white fixed transition-all duration-100 ease-in top-0 left-0 p-6 z-10 w-full h-screen;
+	@apply bg-orange fixed transition-all duration-100 ease-in top-0 left-0 p-6 z-10 w-full h-screen;
 	transform: translateX(-200%);
 	@screen lg {
 		@apply bg-transparent h-auto left-auto block static top-auto p-0 w-full top-auto;
@@ -18,7 +18,7 @@ Navigation
 
 .navigation-button {
 	padding: 15px;
-	@apply bg-black fixed top-0 rounded-bl right-0 w-12 h-12 block z-10 cursor-pointer;
+	@apply bg-white fixed top-0 rounded-bl right-0 w-12 h-12 block z-10 cursor-pointer;
 	@screen lg {
 		@apply hidden;
 	}
@@ -29,7 +29,7 @@ Navigation
 }
 
 .navigation-button__lines {
-	@apply block absolute top-0 w-1/2 opacity-100 bg-white transform transition-all duration-100 ease-in;
+	@apply block absolute top-0 w-1/2 opacity-100 bg-orange transform transition-all duration-100 ease-in;
 	height: 2px;
 }
 
@@ -38,12 +38,12 @@ Navigation
 }
 
 .navigation-button.is-active .navigation-button__line-1 {
-	@apply transform rotate-45 left-0 bg-black;
+	@apply transform rotate-45 left-0 bg-orange;
 	margin-top: 2px;
 }
 
 .navigation-button.is-active .navigation-button__line-2 {
-	@apply transform -rotate-45 left-0 bg-black;
+	@apply transform -rotate-45 left-0 bg-orange;
 	margin-top: 10px;
 }
 
@@ -56,12 +56,12 @@ Navigation
 }
 
 .navigation-button.is-active .navigation-button__line-5 {
-	@apply transform -rotate-45 right-0 bg-black;
+	@apply transform -rotate-45 right-0 bg-orange;
 	margin-top: 2px;
 }
 
 .navigation-button.is-active .navigation-button__line-6 {
-	@apply transform rotate-45 right-0 bg-black;
+	@apply transform rotate-45 right-0 bg-orange;
 	margin-top: 10px;
 }
 

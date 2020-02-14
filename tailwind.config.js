@@ -11,6 +11,12 @@ module.exports = {
       '150': '150px',
     },
     extend: {
+      padding: {
+        '150': '150px'
+      },
+      margin: {
+        '-150': '-150px'
+      },
       width: {
         '50': '50px',
         '75': '75px'
