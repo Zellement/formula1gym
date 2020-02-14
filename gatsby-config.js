@@ -26,16 +26,16 @@ module.exports = {
         whitelistPatterns: [/is-active/],
       }
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `raleway\:300,700`,
-          `sedgwick ave\:300`
-        ],
-        display: 'swap'
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       `raleway\:300,700`,
+    //       `sedgwick-ave\:400`
+    //     ],
+    //     display: 'swap'
+    //   }
+    // },
     {
       resolve: `gatsby-source-prismic`,
       options: {

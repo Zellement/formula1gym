@@ -35,11 +35,11 @@ const Benefits = ({iconColour}) => {
 
   return (
     <>
-      <p className="font-bold text-lg mb-4">{data.allPrismicSiteSpecific.edges[0].node.data.title.text}</p>
-			<ul key={i} className="flex flex-row flex-wrap">
+      <p className="font-bold text-lg md:text-xl mb-4 lg:max-w-xs">{data.allPrismicSiteSpecific.edges[0].node.data.title.text}</p>
+			<ul className="flex flex-row flex-wrap">
         {data.allPrismicSiteSpecific.edges[0].node.data.benefits.map(
           benefitsData => (
-          <li className="text-xs w-1/2">
+          <li key={i} className="text-xs w-1/2 sm:text-sm md:text-base md:my-1">
           <FaRegCheckCircle className={iconColour + " inline mr-2"} /> {benefitsData.benefit.raw[0].text}
         {increaseCount()}
           </li>
