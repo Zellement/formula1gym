@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 import { HTMLContent } from '../components/content'
 import QuickContactForm from '../components/quick-contact-form'

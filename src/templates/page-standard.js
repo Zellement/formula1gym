@@ -3,7 +3,7 @@ import React from "react"
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
 import HowItWorks from "../components/how-it-works"
-import HeroIndex from "../components/hero-index"
+import Hero from "../components/hero"
 
 const duration = 0.35
 
@@ -38,7 +38,7 @@ const IndexPage = () => {
         >
 
           <div className="container">
-            <HeroIndex />
+            <Hero />
           </div>
 
         </motion.div>

@@ -29,6 +29,12 @@ module.exports = {
         '50': '50px',
         '75': '75px'
       },
+      fontSize: {
+        '7xl': '5em',
+        '8xl': '6em',
+        '9xl': '7em',
+        '10xl': '8em',
+      },
       fontFamily: {
         sans: [
           'Raleway',
