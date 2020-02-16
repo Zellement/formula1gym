@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
     <header className="p-6 lg:py-12">
       <div className="container lg:flex lg:space-between">
         <div className="flex flex-wrap items-center">
-          <Link name="Go to the homepage" to="/">
+          <Link aria-label="Go to the homepage" name="Go to the homepage" to="/">
             <Logo />
           </Link>
         </div>
