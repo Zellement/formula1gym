@@ -1,8 +1,7 @@
 import React from "react"
-//import { graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
-import HowItWorks from "../components/how-it-works"
 import Hero from "../components/hero"
 
 const duration = 0.35
@@ -24,7 +23,12 @@ const item = {
   },
 }
 
-const IndexPage = () => {
+const IndexPage = ({data}) => {
+
+  const post = data.prismicPage
+
+  // console.log({data})
+
   return (
     <>
       <SEO title="Home" />
@@ -37,9 +41,12 @@ const IndexPage = () => {
           transition="easeInOut"
         >
 
-          <div className="container">
-            <Hero />
-          </div>
+          <motion.div className="container" variants={container}>
+            <Hero
+              pageTitle={post.data.page_title.text}
+              pageIntro={post.data.page_intro.text}
+              />
+          </motion.div>
 
         </motion.div>
 
@@ -49,7 +56,6 @@ const IndexPage = () => {
           transition="easeInOut"
         >
 
-          <HowItWorks />
 
         </motion.div>
         
@@ -60,28 +66,18 @@ const IndexPage = () => {
 
 export default IndexPage
 
-// export const query = graphql`
-// query ContactPage {
-//   prismicHomepage {
-//     id
-//     uid
-//     data {
-//       how_it_works {
-//         image {
-//           alt
-//           copyright
-//           url
-//         }
-//         text {
-//           html
-//           text
-//         }
-//         title {
-//           html
-//           text
-//         }
-//       }
-//     }
-//   }
-// }
-// `
+export const query = graphql`
+query($slug: String!) {
+  prismicPage(uid: {eq: $slug}) {
+    id
+    data {
+      page_intro {
+        text
+      }
+      page_title {
+        text
+      }
+    }
+  }
+}
+`

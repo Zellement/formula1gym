@@ -61,7 +61,7 @@ const HowItWorks = ({ containerClass }) => {
   function checkNumber(){
     if (i === 1) {
       return (
-        <QuickContactForm />
+        <div className="mt-4"><QuickContactForm /></div>
       )
     }
   }
