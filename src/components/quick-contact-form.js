@@ -45,14 +45,14 @@ export default class Contact extends React.Component {
         >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
-            <p hidden>
-                Don't fill this out:{" "}
-                <label><input name="bot-field" /></label>
-            </p>
+            {/* <p hidden>
+                Don't fill this out:{" "} */}
+                <label><span className="hidden">Do not fill this in</span><input name="bot-field" /></label>
+            {/* </p> */}
             <div className="flex flex-wrap justify-between">
-              <label className="flex flex-1 m-1"><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Name" type="text" name="name" onChange={this.handleChange} /></label>
-              <label className="flex flex-1 m-1"><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Email"  type="email" name="email" onChange={this.handleChange} /></label>
-              <label className="flex flex-1 m-1"><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Telephone" type="text" name="telephone" onChange={this.handleChange} /></label>
+              <label className="flex flex-1 m-1"><span className="hidden">Name</span><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Name" type="text" name="name" onChange={this.handleChange} /></label>
+              <label className="flex flex-1 m-1"><span className="hidden">Email</span><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Email"  type="email" name="email" onChange={this.handleChange} /></label>
+              <label className="flex flex-1 m-1"><span className="hidden">Telephone</span><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Telephone" type="text" name="telephone" onChange={this.handleChange} /></label>
               <button className="btn btn-orange p-0 flex-1 m-1" type="submit"><span className="whitespace-no-wrap block p-4">Book induction</span></button>
             </div>
         </form>
