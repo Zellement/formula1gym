@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import JoinNow from "../components/buttons/join-now"
 
 const Nav = class extends React.Component {
 
@@ -40,7 +41,7 @@ const Nav = class extends React.Component {
             <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/find-us">Find Us</Link>
           </li>
           <li className="navigation-wrapper__list-item">
-            <Link className="navigation-wrapper__link btn btn-blue" onClick={this.toggleMenu} activeClassName="is-active" to="/join-now">Join Now</Link>
+            <JoinNow />
           </li>
         </ul>
       </div>

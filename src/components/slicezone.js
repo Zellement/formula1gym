@@ -4,7 +4,6 @@ import React, { Component } from 'react'
 export default class SliceZone extends Component {
   render() {
     const { allSlices } = this.props
-    console.log({ allSlices })
     if (allSlices) {
       return (
         <>

@@ -28,7 +28,7 @@ const OpeningHours = () => {
 
   return (
     <div className="w-100 gradient-orange--horizontal p-1 text-xs text-white md:no-bg lg:absolute lg:top-0 lg:right-0">
-		<Link to="contact">Open {daysofweek[dd]} {(hours[dd])}</Link>
+		<Link to="/contact">Open {daysofweek[dd]} {(hours[dd])}</Link>
 	</div>
   )
 }

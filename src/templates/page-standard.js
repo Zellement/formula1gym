@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
