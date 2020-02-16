@@ -52,6 +52,9 @@ module.exports = {
           default: '#FF9900',
           semidark: '#AD5E00',
         },
+        yellow: {
+          default: '#FFC700'
+        }
       },
     }
   },

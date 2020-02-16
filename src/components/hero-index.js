@@ -1,9 +1,10 @@
 import React from "react"
 import Benefits from "../components/benefits"
+import JoinNow from "../components/buttons/join-now"
 
 const HeroIndex = () => {
   return (
-    <div className="w-100 text-white p-8 lg:flex lg:flex-wrap">
+    <div className="w-100 text-white p-4 lg:flex lg:flex-wrap">
 
 		<div className="lg:w-1/2">
 
@@ -23,6 +24,16 @@ const HeroIndex = () => {
 		<div className="m-auto lg:w-1/2">	
 
 			<Benefits iconColour="text-orange-semidark" />
+
+		</div>
+
+		<div className="w-full flex flex-col text-center my-4 items-center sm:flex-row sm:justify-center">
+			
+			<JoinNow />
+
+			<span className="my-2 text-orange-semidark font-bold sm:mx-4">or</span>
+
+			<a className="btn btn-yellow" href="howitworks">Learn How It Works</a>
 
 		</div>
 	  

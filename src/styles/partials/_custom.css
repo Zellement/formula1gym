@@ -28,6 +28,12 @@
 			@apply bg-orange-semidark;
 		}
 	}
+	&-yellow {
+		@apply bg-yellow text-orange-semidark;
+		&:hover {
+			@apply bg-orange-semidark text-white;
+		}
+	}
 }
 
 @responsive {

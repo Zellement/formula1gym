@@ -37,7 +37,7 @@ const IndexPage = () => {
           transition="easeInOut"
         >
 
-          <div className="container">
+          <div id="howitworks" className="container">
             <HeroIndex />
           </div>
 
