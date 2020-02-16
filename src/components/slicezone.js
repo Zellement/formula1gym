@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
+import GalleryCarousel from "./gallery-carousel"
 // import { BodyText, CodeBlock, Image, Quote } from '../components/slices'
 
 export default class SliceZone extends Component {
   render() {
     const { allSlices } = this.props
+    //console.log(allSlices)
     if (allSlices) {
       return (
         <>
           {
-            allSlices.map(s => {
-              switch (s.slice_type) {
-                case 'text_section':
+            allSlices.map(slice => {
+              switch (slice.slice_type) {
+                case 'text___gallery':
                   return (
                     <>
-                      This will be text
+                      <GalleryCarousel images={slice.items} />
                     </>
                   )
                 case 'quote':

@@ -75,65 +75,27 @@ query($slug: String!) {
     id
     data {
       page_content {
-        ... on PrismicPagePageContentFullWidthImage {
+        ... on PrismicPagePageContentTextGallery {
           id
-          slice_type
           primary {
-            image {
-              localFile {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
-        }
-        ... on PrismicPagePageContentTextSection {
-          id
-          slice_type
-          internal {
-            content
-            description
-            ignoreType
-            mediaType
-          }
-          primary {
-            rich_text {
-              html
-            }
-          }
-        }
-        ... on PrismicPagePageContentImageGallery {
-          id
-          slice_type
-          primary {
-            gallery_title {
+            text {
               text
             }
           }
+          slice_label
+          slice_type
           items {
+            image_description {
+              text
+            }
             image {
               localFile {
                 childImageSharp {
-                  fixed {
-                    ...GatsbyImageSharpFixed
-                  }
                   fluid {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }
-            }
-          }
-        }
-        ... on PrismicPagePageContentQuote {
-          id
-          slice_type
-          primary {
-            quote_text {
-              text
             }
           }
         }
