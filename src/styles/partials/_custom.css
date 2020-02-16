@@ -41,3 +41,43 @@
 		background-image: none;
 	}
 }
+
+
+
+/* Embla carousel */
+
+.embla {
+    @apply w-full;
+  }
+  
+  .embla__wrap {
+    @apply relative;
+  }
+  
+  .embla__viewport {
+    @apply w-full overflow-hidden;
+  }
+  
+  .embla__container {
+    @apply flex;
+  }
+  
+  .embla__slide {
+    @apply relative flex-1;
+  }
+  
+  .embla__slide--gallery {
+    flex: 0 0 100%;
+    padding-left: 0px;
+  
+    /* @screen md {
+      flex: 0 0 50%;
+      padding-left: 0px;
+    }
+  
+    @screen xl {
+      flex: 0 0 25%;
+      padding-left: 0px;
+    } */
+  }
+  
