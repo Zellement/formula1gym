@@ -53,7 +53,8 @@ module.exports = {
           semidark: '#AD5E00',
         },
         yellow: {
-          default: '#FFC700'
+          default: '#FFC700',
+          light: '#ffe07a'
         }
       },
     }

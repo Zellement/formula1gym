@@ -16,6 +16,10 @@ Navigation
 	transform: translateX(0);
 }
 
+.navigation-wrapper__link.is-active {
+	@apply text-yellow-light;
+}
+
 .navigation-button {
 	padding: 15px;
 	@apply bg-white fixed top-0 rounded-bl right-0 w-12 h-12 block z-10 cursor-pointer;
