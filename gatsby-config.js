@@ -22,8 +22,9 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
-        tailwind: true, 
-        whitelistPatterns: [/is-active/],
+        tailwind: true,
+        whitelist: ['order-1','order-0'],
+        whitelistPatterns: [/is-active/, 'order$'],
       }
     },
     // {
