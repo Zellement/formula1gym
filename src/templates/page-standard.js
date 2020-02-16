@@ -80,6 +80,7 @@ query($slug: String!) {
           primary {
             text {
               text
+              html
             }
           }
           slice_label

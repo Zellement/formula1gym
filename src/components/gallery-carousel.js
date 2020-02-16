@@ -49,7 +49,7 @@ class GalleryCarousel extends Component {
             initial="hidden"
             animate="visible"
           >
-			  {console.log(this.state.images)}
+			  {/* {console.log(this.state.images)} */}
             <div className="relative">
               <EmblaCarouselReact
                 emblaRef={c => (this.embla = c)}
