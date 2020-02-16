@@ -1,8 +1,10 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
 import Hero from "../components/hero"
+import SliceZone from "../components/slicezone"
 
 const duration = 0.35
 
@@ -27,11 +29,12 @@ const IndexPage = ({data}) => {
 
   const post = data.prismicPage
 
-  // console.log({data})
-
   return (
     <>
-      <SEO title="Home" />
+      <SEO
+        title={post.data.meta_title}
+        description={post.data.meta_title}
+      />
 
       <motion.section variants={container} initial="hidden" animate="visible">
 
@@ -56,6 +59,7 @@ const IndexPage = ({data}) => {
           transition="easeInOut"
         >
 
+          <SliceZone allSlices={post.data.page_content} />
 
         </motion.div>
         
@@ -71,13 +75,80 @@ query($slug: String!) {
   prismicPage(uid: {eq: $slug}) {
     id
     data {
+      page_content {
+        ... on PrismicPagePageContentFullWidthImage {
+          id
+          slice_type
+          primary {
+            image {
+              localFile {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+        }
+        ... on PrismicPagePageContentTextSection {
+          id
+          slice_type
+          internal {
+            content
+            description
+            ignoreType
+            mediaType
+          }
+          primary {
+            rich_text {
+              html
+            }
+          }
+        }
+        ... on PrismicPagePageContentImageGallery {
+          id
+          slice_type
+          primary {
+            gallery_title {
+              text
+            }
+          }
+          items {
+            image {
+              localFile {
+                childImageSharp {
+                  fixed {
+                    ...GatsbyImageSharpFixed
+                  }
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+        }
+        ... on PrismicPagePageContentQuote {
+          id
+          slice_type
+          primary {
+            quote_text {
+              text
+            }
+          }
+        }
+      }
       page_intro {
         text
       }
       page_title {
         text
       }
+      meta_description
+      meta_title
     }
   }
 }
+
 `
