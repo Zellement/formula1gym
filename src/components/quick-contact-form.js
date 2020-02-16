@@ -47,13 +47,13 @@ export default class Contact extends React.Component {
           <input type="hidden" name="form-name" value="contact" />
             <p hidden>
                 Don't fill this out:{" "}
-                <input name="bot-field" />
+                <label><input name="bot-field" /></label>
             </p>
             <div className="flex flex-wrap justify-between">
-              <input className="bg-gray-300 flex-1 m-1 p-4 rounded-full" placeholder="Name" type="text" name="name" onChange={this.handleChange} />   
-              <input className="bg-gray-300 flex-1 m-1 p-4 rounded-full" placeholder="Email"  type="email" name="email" onChange={this.handleChange} />
-              <input className="bg-gray-300 flex-1 m-1 p-4 rounded-full" placeholder="Telephone" type="text" name="telephone" onChange={this.handleChange} />
-              <button className="btn btn-orange flex-1 m-1" type="submit"><span className="whitespace-no-wrap">Book induction</span></button>
+              <label className="flex flex-1 m-1"><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Name" type="text" name="name" onChange={this.handleChange} /></label>
+              <label className="flex flex-1 m-1"><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Email"  type="email" name="email" onChange={this.handleChange} /></label>
+              <label className="flex flex-1 m-1"><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Telephone" type="text" name="telephone" onChange={this.handleChange} /></label>
+              <button className="btn btn-orange p-0 flex-1 m-1" type="submit"><span className="whitespace-no-wrap block p-4">Book induction</span></button>
             </div>
         </form>
     );
