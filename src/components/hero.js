@@ -14,9 +14,9 @@ const Hero = ({pageTitle, pageIntro}) => {
     
 
         
-    <div className="w-100 text-white p-4 flex flex-col md:flex-row md:justify-center lg:pb-8">
+    <div className="w-100 text-white p-8 flex flex-col md:flex-row md:justify-center">
       <motion.h1
-        className="font-display text-3xl mb-1 mr-4 md:text-4xl lg:text-5xl lg:mr-12" 
+        className="text-3xl mb-1 mr-4 md:text-4xl lg:text-5xl lg:mr-12" 
         variants={item}
         transition="easeInOut">{pageTitle}</motion.h1>
       <motion.p

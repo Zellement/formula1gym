@@ -28,6 +28,8 @@ const IndexPage = ({data}) => {
 
   const post = data.prismicPage
 
+  //console.log(data)
+
   return (
     <>
       <SEO
@@ -53,7 +55,7 @@ const IndexPage = ({data}) => {
         </motion.div>
 
         <motion.div
-          className="container"
+          className=""
           variants={item}
           transition="easeInOut"
         >
@@ -75,6 +77,19 @@ query($slug: String!) {
     id
     data {
       page_content {
+        ... on PrismicPagePageContentMeetTheTeam {
+          id
+          slice_type
+        }
+        ... on PrismicPagePageContentTextSection {
+          id
+          slice_type
+          primary {
+            rich_text {
+              html
+            }
+          }
+        }
         ... on PrismicPagePageContentTextGallery {
           id
           primary {
@@ -86,14 +101,11 @@ query($slug: String!) {
           slice_label
           slice_type
           items {
-            image_description {
-              text
-            }
             image {
               localFile {
                 childImageSharp {
                   fluid {
-                    ...GatsbyImageSharpFluid_withWebp
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
                   }
                 }
               }

@@ -29,6 +29,10 @@ module.exports = {
         '50': '50px',
         '75': '75px'
       },
+      maxWidth: {
+        '200': '200px',
+        '300': '300px'
+      },
       fontSize: {
         '7xl': '5em',
         '8xl': '6em',

@@ -50,7 +50,7 @@ class GalleryCarousel extends Component {
             animate="visible"
           >
 			  {/* {console.log(this.state.images)} */}
-            <div className="relative">
+            <div className="relative shadow-lg">
               <EmblaCarouselReact
                 emblaRef={c => (this.embla = c)}
                 htmlTagName={`div`}
@@ -74,8 +74,8 @@ class GalleryCarousel extends Component {
                       <Img
                         backgroundColor="#26486E"
                         fluid={image.image.localFile.childImageSharp.fluid}
-                        // key={image.title}
-                        // alt={image.alt}
+                        key={image.title}
+                        alt={image.alt}
                         className="w-full block mb-px"
                       />
                       <span className="text-sm bg-white p-1 text-black absolute bottom-0 right-0 z-20">{('0' + (index + 1)).slice(-2)}</span>

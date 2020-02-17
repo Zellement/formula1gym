@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import GalleryCarousel from "./gallery-carousel"
 import { HTMLContent } from "./content"
+import MeetTheTeam from "./meet-the-team"
 // import { BodyText, CodeBlock, Image, Quote } from '../components/slices'
 
 export default class SliceZone extends Component {
   render() {
     const { allSlices } = this.props
-    console.log(allSlices)
+    //console.log(allSlices)
     if (allSlices) {
       return (
         <>
@@ -15,22 +16,24 @@ export default class SliceZone extends Component {
               switch (slice.slice_type) {
                 case 'text___gallery':
                   return (
-                    <div className="flex flex-col md:flex-row" key={index}>
+                    <div className="container">
+                      <div className="flex flex-col md:flex-row md:py-10" key={index}>
 
-                      <div className="md:w-1/2">
-                        <HTMLContent content={slice.primary.text.html} />
+                        <div className="p-8 md:w-1/2">
+                          <HTMLContent content={slice.primary.text.html} />
+                        </div>
+
+                        <div className="p-8 md:w-1/2">
+                          <GalleryCarousel images={slice.items} />
+                        </div>
+
                       </div>
-
-                      <div className="md:w-1/2">
-                        <GalleryCarousel images={slice.items} />
-                      </div>
-
                     </div>
                   )
-                case 'quote':
+                case 'meet_the_team':
                   return (
                     <div key={index}>
-                      This will be the quote
+                      <MeetTheTeam />
                     </div>
                   )
                 case 'full_width_image':
@@ -41,7 +44,7 @@ export default class SliceZone extends Component {
                   )
                 case 'image_gallery':
                   return (
-                    <div key={index}>
+                    <div className="w-100 bg-red" key={index}>
                       This will be a gallery
                     </div>
                   )
