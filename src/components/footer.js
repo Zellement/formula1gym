@@ -28,7 +28,7 @@ const Footer = () => {
   `)
   return (
     <>
-      <footer className="gradient-orange--vertical text-white p-10 pb-20 md:py-16 min-w-400">
+      <footer className="gradient-orange--vertical order-1 text-white p-10 pb-20 md:py-16 min-w-400 md:order-first">
         <div className="container">
 
           <Logo />
