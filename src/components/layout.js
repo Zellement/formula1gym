@@ -2,9 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { motion, AnimatePresence } from 'framer-motion'
-import OpeningHours from "../components/opening-hours"
+import OpeningHours from "./opening-hours"
 
 import Header from "./header"
+import Map from "./map"
+import Footer from "./footer"
 import "../styles/main.css"
 
 const duration = 0.35
@@ -42,7 +44,7 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-    <div className="gradient-orange--vertical">
+    <div className="gradient-orange--vertical-broken-light">
       <OpeningHours />
       <Header siteTitle={data.site.siteMetadata.title} />
     </div>
@@ -57,6 +59,10 @@ const Layout = ({ children, location }) => {
         {children}
         </motion.main>
       </AnimatePresence>
+      <div className="flex flex-col md:flex-row mt-10">
+        <Footer />
+        <Map />
+      </div>
     </>
   )
 }

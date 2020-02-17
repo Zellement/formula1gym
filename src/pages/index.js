@@ -32,7 +32,7 @@ const IndexPage = () => {
       <motion.section variants={container} initial="hidden" animate="visible">
 
         <motion.div
-          className="gradient-orange--vertical-dark"
+          className="gradient-orange--vertical-broken-dark"
           variants={item}
           transition="easeInOut"
         >

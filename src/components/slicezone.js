@@ -16,7 +16,7 @@ export default class SliceZone extends Component {
               switch (slice.slice_type) {
                 case 'text___gallery':
                   return (
-                    <div className="container">
+                    <div key={index} className="container">
                       <div className="flex flex-col md:flex-row md:py-10" key={index}>
 
                         <div className="p-8 md:w-1/2">
