@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { FaPhone, FaRegEnvelope } from "react-icons/fa"
-import Logo from "../components/logo"
+import Logo from "./logo"
+import Telephone from "./contact-options/telephone"
+import Email from "./contact-options/email"
 
 const Footer = () => {
   const getDate = new Date()
@@ -14,16 +15,6 @@ const Footer = () => {
           title
         }
       }
-      prismicSiteSpecific {
-        data {
-          email {
-            text
-          }
-          telephone {
-            text
-          }
-        }
-      }
     }
   `)
   return (
@@ -34,22 +25,11 @@ const Footer = () => {
           <Logo />
 
           <p className="mt-8 mb-4">
-            <a
-              rel="nofollow, noindex"
-              className="text-blue-mid"
-              href={"tel:" + data.prismicSiteSpecific.data.telephone.text}
-            >
-              <FaPhone className="inline" /> {data.prismicSiteSpecific.data.telephone.text}
-            </a>
+            <Telephone />
           </p>
 
           <p className="mb-4">
-            <FaRegEnvelope className="inline" /> <a
-              href={"mailto:" + data.prismicSiteSpecific.data.email.text}
-              rel="nofollow, noindex"
-            >
-              {data.prismicSiteSpecific.data.email.text}
-            </a>
+            <Email />
           </p>
 
           <p>
