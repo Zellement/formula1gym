@@ -50,7 +50,7 @@ class GalleryCarousel extends Component {
             animate="visible"
           >
 			  {/* {console.log(this.state.images)} */}
-            <div className="relative shadow-lg">
+            <div className="relative shadow-xl">
               <EmblaCarouselReact
                 emblaRef={c => (this.embla = c)}
                 htmlTagName={`div`}
@@ -76,7 +76,7 @@ class GalleryCarousel extends Component {
                         fluid={image.image.localFile.childImageSharp.fluid}
                         key={image.title}
                         alt={image.alt}
-                        className="rounded-lg w-full block"
+                        className="w-full block"
                       />
                       <span className="text-sm bg-white p-1 text-black absolute bottom-0 right-0 z-20">{('0' + (index + 1)).slice(-2)}</span>
                     </motion.div>
@@ -86,7 +86,7 @@ class GalleryCarousel extends Component {
               <motion.button
                 variants={item}
                 transition="easeInOut"
-                className="absolute cursor-pointer mt-1 mr-1 top-0 left-0 p-1 font-bold text-2xl text-yellow font-serif appearance-none focus:outline-none z-10"
+                className="transition duration-100 ease-in absolute cursor-pointer mt-1 mr-1 top-0 left-0 p-1 font-bold text-2xl text-white font-serif appearance-none focus:outline-none z-10 hover:text-blue"
                 onClick={() => this.embla.scrollPrev()}
                 aria-label="Previous image"
               >
@@ -95,7 +95,7 @@ class GalleryCarousel extends Component {
               <motion.button
                 variants={item}
                 transition="easeInOut"
-                className="absolute cursor-pointer mt-1 mr-1 top-0 right-0 2xl:-mr-6 font-bold text-yellow text-2xl appearance-none focus:outline-none z-10"
+                className="transition duration-100 ease-in absolute cursor-pointer mt-1 mr-1 top-0 right-0 2xl:-mr-6 font-bold text-white text-2xl appearance-none focus:outline-none z-10 hover:text-blue"
                 onClick={() => this.embla.scrollNext()}
                 aria-label="Next image"
               >

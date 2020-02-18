@@ -17,13 +17,13 @@ export default class SliceZone extends Component {
                 case 'text___gallery':
                   return (
                     <div key={index} className="container">
-                      <div className="flex flex-col md:flex-row md:py-10" key={index}>
+                      <div className="flex flex-col lg:flex-row lg:py-10" key={index}>
 
-                        <div className="p-8 md:w-1/2">
-                          <HTMLContent content={slice.primary.text.html} />
+                        <div className="p-8 lg:w-1/2 max-w-xl mx-auto">
+                          <HTMLContent className="content" content={slice.primary.text.html} />
                         </div>
 
-                        <div className="p-8 md:w-1/2">
+                        <div className="lg:p-8 lg:w-1/2">
                           <GalleryCarousel images={slice.items} />
                         </div>
 

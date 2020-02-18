@@ -40,6 +40,31 @@
 	}
 }
 
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 15px solid red;
+	position: absolute;
+	bottom: -15px;
+	z-index: 50;
+	left: 50%;
+	transform: translateX(-50%);
+
+	&--orange {
+		border-top-color: #FF9900;
+	}
+
+	&--gray {
+		border-top-color: #F7FAFC;
+	}
+
+	&--white {
+		border-top-color: #fff;
+	}
+}
+
 @responsive {
 	.no-bg {
 		background-image: none;

@@ -89,7 +89,7 @@ const HowItWorks = ({ containerClass }) => {
 								</div>
 
 								<div className="max-w-lg">
-									<HTMLContent content={whyChooseData.primary.text.html} />
+									<HTMLContent className="content" content={whyChooseData.primary.text.html} />
 								</div>
 
                 {checkNumber()}
