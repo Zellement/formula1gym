@@ -76,6 +76,10 @@ export const query = graphql`
             id
             slice_type
           }
+          ... on PrismicPagePageContentClassesTimetable {
+            id
+            slice_type
+          }
           ... on PrismicPagePageContentTextGallery {
             id
             primary {

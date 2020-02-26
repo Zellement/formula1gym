@@ -1,5 +1,5 @@
 import React from "react"
-//import { graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
 import HowItWorks from "../components/how-it-works"

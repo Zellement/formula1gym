@@ -54,8 +54,5 @@ h2 {
     @apply text-lg;
   }
 
-  em {
-    @apply my-6 border-t border-b border-orange border-solid not-italic block py-4 font-display text-lg font-normal mx-4;
-  }
 
 }

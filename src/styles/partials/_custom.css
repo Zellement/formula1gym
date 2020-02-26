@@ -72,6 +72,10 @@
 }
 
 
+pre {
+	@apply whitespace-normal my-6 border-t border-b border-orange border-solid not-italic block py-4 font-display text-lg font-normal mx-4;
+}
+
 
 /* Embla carousel */
 

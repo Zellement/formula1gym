@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import GalleryCarousel from "./gallery-carousel"
 import { HTMLContent } from "./content"
 import MeetTheTeam from "./meet-the-team"
+import ClassesTimetable from "./classes-timetable"
 // import { BodyText, CodeBlock, Image, Quote } from '../components/slices'
 
 export default class SliceZone extends Component {
@@ -13,6 +14,7 @@ export default class SliceZone extends Component {
         <>
           {
             allSlices.map((slice, index) => {
+              console.log(slice.slice_type)
               switch (slice.slice_type) {
                 case 'text___gallery':
                   return (
@@ -34,6 +36,12 @@ export default class SliceZone extends Component {
                   return (
                     <div key={index}>
                       <MeetTheTeam />
+                    </div>
+                  )
+                case 'classes_timetable':
+                  return (
+                    <div key={index}>
+                      <ClassesTimetable />
                     </div>
                   )
                 case 'full_width_image':
