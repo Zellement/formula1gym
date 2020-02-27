@@ -11,9 +11,6 @@ const item = {
 
 const Hero = ({pageTitle, pageIntro}) => {
   return (
-    
-
-        
     <div className="w-100 text-white p-8 flex flex-col md:flex-row md:justify-center">
       <motion.p
         className="text-3xl mb-1 mr-4 font-display md:text-4xl lg:text-5xl lg:mr-12" 

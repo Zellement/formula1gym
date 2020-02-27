@@ -48,7 +48,7 @@ const Facilities = () => {
             </div>
           ))}
         </div>
-		<ArrowDown colour="arrow-down--gray" />
+		    <ArrowDown colour="arrow-down--gray" />
       </div>
     </>
   )

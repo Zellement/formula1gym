@@ -6,7 +6,6 @@ import Hero from "../components/hero"
 import Facilities from "../components/facilities"
 import SliceZone from "../components/slicezone"
 import ReadyToBegin from "../components/ready-to-begin"
-import ArrowDown from "../components/arrow-down"
 
 const duration = 0.35
 
@@ -53,7 +52,6 @@ const IndexPage = ({ data }) => {
         <motion.div className="relative" variants={item} transition="easeInOut">
           <SliceZone allSlices={post.data.page_content} />
           
-		      <ArrowDown colour="arrow-down--white" />
         </motion.div>
 
         <Facilities />
@@ -79,6 +77,15 @@ export const query = graphql`
           ... on PrismicPagePageContentClassesTimetable {
             id
             slice_type
+          }
+          ... on PrismicPagePageContentTextSection {
+            id
+            slice_type
+            primary {
+              rich_text {
+                html
+              }
+            }
           }
           ... on PrismicPagePageContentTextGallery {
             id
