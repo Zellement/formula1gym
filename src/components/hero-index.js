@@ -1,6 +1,7 @@
 import React from "react"
 import Benefits from "../components/benefits"
 import JoinNow from "../components/buttons/join-now"
+import { Link } from "gatsby"
 
 const HeroIndex = () => {
   return (
@@ -33,7 +34,7 @@ const HeroIndex = () => {
 
 			<span className="my-2 text-orange-semidark font-bold sm:mx-4">or</span>
 
-			<a className="btn btn-yellow" href="howitworks">Learn How It Works</a>
+			<Link className="btn btn-yellow" to="/#howitworks">Learn How It Works</Link>
 
 		</div>
 	  

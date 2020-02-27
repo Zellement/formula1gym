@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from "framer-motion"
 import OpeningHours from "./opening-hours"
 
 import Header from "./header"
@@ -20,7 +20,7 @@ const variants = {
     transition: {
       duration: duration,
       delay: duration,
-      when: 'beforeChildren',
+      when: "beforeChildren",
     },
   },
   exit: {
@@ -42,12 +42,19 @@ const Layout = ({ children, location }) => {
     }
   `)
 
+  // For smooth scroll
+  // https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
+  if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
   return (
     <>
-    <div className="gradient-orange--vertical-broken-light">
-      <OpeningHours />
-      <Header siteTitle={data.site.siteMetadata.title} />
-    </div>
+      <div className="gradient-orange--vertical-broken-light">
+        <OpeningHours />
+        <Header siteTitle={data.site.siteMetadata.title} />
+      </div>
       <AnimatePresence>
         <motion.main
           key={location.pathname}
@@ -56,7 +63,7 @@ const Layout = ({ children, location }) => {
           animate="enter"
           exit="exit"
         >
-        {children}
+          {children}
         </motion.main>
       </AnimatePresence>
       <div className="flex flex-col md:flex-row mt-10">

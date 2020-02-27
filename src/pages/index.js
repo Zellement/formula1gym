@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
 import HowItWorks from "../components/how-it-works"
@@ -27,7 +27,7 @@ const item = {
   },
 }
 
-const IndexPage = ({data}) => {
+const IndexPage = ({ data }) => {
   const post = data.prismicHomepage.data.body[0]
   console.log(data)
   return (
@@ -40,9 +40,7 @@ const IndexPage = ({data}) => {
           variants={item}
           transition="easeInOut"
         >
-          <div id="howitworks" className="container">
-            <HeroIndex />
-          </div>
+          <HeroIndex />
         </motion.div>
 
         <motion.div
@@ -50,7 +48,9 @@ const IndexPage = ({data}) => {
           variants={item}
           transition="easeInOut"
         >
-          <HowItWorks />
+          <div id="howitworks">
+            <HowItWorks />
+          </div>
         </motion.div>
 
         <ReadyToBegin />
@@ -69,6 +69,7 @@ const IndexPage = ({data}) => {
             </div>
           </div>
         </div>
+        <div id="howitworks"></div>
       </motion.section>
     </>
   )
@@ -77,29 +78,28 @@ const IndexPage = ({data}) => {
 export default IndexPage
 
 export const query = graphql`
-query HomeQuery {
-  prismicHomepage {
-    data {
-      body {
-        items {
-          image {
-            localFile {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+  query HomeQuery {
+    prismicHomepage {
+      data {
+        body {
+          items {
+            image {
+              localFile {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                  }
                 }
               }
             }
           }
-        }
-        primary {
-          text {
-            html
+          primary {
+            text {
+              html
+            }
           }
         }
       }
     }
   }
-}
-
 `

@@ -26,7 +26,8 @@
     "react-helmet": "^5.2.1",
     "react-icons": "^3.9.0",
     "react-iframe": "^1.8.0",
-    "react-lazy-load": "^3.0.13"
+    "react-lazy-load": "^3.0.13",
+    "smooth-scroll": "^16.1.2"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",

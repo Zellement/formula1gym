@@ -15,7 +15,7 @@ const Facilities = () => {
             facility_icon {
               localFile {
                 childImageSharp {
-                  fixed {
+                  fixed(height: 64, width: 64) {
                     ...GatsbyImageSharpFixed
                   }
                 }
