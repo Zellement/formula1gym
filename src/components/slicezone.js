@@ -14,7 +14,6 @@ export default class SliceZone extends Component {
       return (
         <>
           {allSlices.map((slice, index) => {
-            console.log(slice.slice_type)
             switch (slice.slice_type) {
               case "text___gallery":
                 return (

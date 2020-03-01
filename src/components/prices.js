@@ -69,8 +69,8 @@ const Prices = () => {
           </p>
           <div className="flex justify-between flex-row flex-wrap">
             {data.allPrismicSiteSpecific.edges[0].node.data.upfront_prices.map(
-              upfrontPricesData => (
-                <div className="w-1/3 bg-white rounded flex-col flex flex-auto justify-between m-2 shadow text-center md:w-1/4 lg:w-auto">
+              (upfrontPricesData, index) => (
+                <div key={index} className="w-1/3 bg-white rounded flex-col flex flex-auto justify-between m-2 shadow text-center md:w-1/4 lg:w-auto">
                   <p className="bg-orange-light font-bold text-gray-700 md:mb-6 p-4 min-h-80 sm:min-h-0 flex justify-center flex-col">
                     {upfrontPricesData.type.text}
                   </p>
@@ -93,8 +93,8 @@ const Prices = () => {
           </p>
           <div className="flex justify-between flex-row flex-wrap">
             {data.allPrismicSiteSpecific.edges[0].node.data.student_prices.map(
-              studentPrices => (
-                <div className="w-1/3 bg-white rounded flex-col flex flex-auto justify-between m-2 shadow text-center md:w-1/4 lg:w-auto">
+              (studentPrices, index) => (
+                <div key={index} className="w-1/3 bg-white rounded flex-col flex flex-auto justify-between m-2 shadow text-center md:w-1/4 lg:w-auto">
                   <p className="bg-orange-light font-bold text-gray-700 md:mb-6 p-4 min-h-80 sm:min-h-0">
                     {studentPrices.type.text}
                   </p>

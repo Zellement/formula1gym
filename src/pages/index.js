@@ -29,7 +29,6 @@ const item = {
 
 const IndexPage = ({ data }) => {
   const post = data.prismicHomepage.data.body[0]
-  console.log(data)
   return (
     <>
       <SEO title="Home" />
