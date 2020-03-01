@@ -29,7 +29,7 @@ const OpeningHours = ({ listed }) => {
     return (
       <>
         <div className="w-100 gradient-orange--horizontal p-1 text-xs text-white md:no-bg lg:absolute lg:top-0 lg:right-0">
-          <Link to="/contact">
+          <Link to="/find-us">
             Open {daysofweek[dd]} {hours[dd]}
           </Link>
         </div>
