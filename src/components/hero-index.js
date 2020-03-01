@@ -24,7 +24,7 @@ const HeroIndex = () => {
 
 		<div className="m-auto lg:w-1/2">	
 
-			<Benefits iconColour="text-orange-semidark" />
+			<Benefits showTitle={true} iconColour="text-orange-semidark" />
 
 		</div>
 

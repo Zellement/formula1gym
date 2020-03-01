@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { FaRegCheckCircle } from "react-icons/fa";
+import { FaRegCheckCircle } from "react-icons/fa"
 
-const Benefits = ({iconColour}) => {
+const Benefits = ({iconColour, showTitle}) => {
   const data = useStaticQuery(graphql`
     query BenefitsQuery {
       allPrismicSiteSpecific {
@@ -35,7 +35,7 @@ const Benefits = ({iconColour}) => {
 
   return (
     <>
-      <p className="font-bold text-lg md:text-xl mb-4 lg:max-w-xs">{data.allPrismicSiteSpecific.edges[0].node.data.title.text}</p>
+      {showTitle ? ( <><p className="font-bold text-lg md:text-xl mb-4 lg:max-w-xs">{data.allPrismicSiteSpecific.edges[0].node.data.title.text}</p></> ) : null }
 			<ul className="flex flex-row flex-wrap">
         {data.allPrismicSiteSpecific.edges[0].node.data.benefits.map(
           benefitsData => (
