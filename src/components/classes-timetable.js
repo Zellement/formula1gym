@@ -48,7 +48,7 @@ const ClassesTimetable = () => {
     <div className="">
       <div className="container">
         <div className="flex flex-col lg:flex-row lg:flex-wrap">
-          <div className="flex flex-col p-8 lg:w-3/5">
+          <div className="flex flex-col lg:w-3/5">
             <div className="overflow-x-auto">
               {data.prismicClassesTimetable.data.body.map(classesData => (
                 <div className="w-100 flex flex-col md:flex-row py-2 border-gray-300 border-solid border-b-2 mb-2">

@@ -18,7 +18,7 @@ const Email = ({ className }) => {
     <>
       <a
         href={"mailto:" + data.prismicSiteSpecific.data.email.text}
-        rel="nofollow, noindex"
+        rel="noopener noreferrer"
       >
         <FaRegEnvelope className="inline" />{" "}
         {data.prismicSiteSpecific.data.email.text}

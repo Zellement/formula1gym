@@ -32,10 +32,13 @@ const Footer = () => {
             <Email />
           </p>
 
-          <p>
+          <p className="mb-4">
             <span dangerouslySetInnerHTML={{ __html: "&copy;" }} />{" "}
             {getYear + " " + data.site.siteMetadata.title}
           </p>
+
+          <p><strong>Discounted Parking</strong>
+            <br />Up to 90 mins - £1.50 | 2 hours - £2 | 3 hours - £3 | 4 hours - £4</p>
         </div>
       </footer>
 

@@ -18,19 +18,18 @@ export default class SliceZone extends Component {
             switch (slice.slice_type) {
               case "text___gallery":
                 return (
-                  <div key={index} className="container">
+                  <div key={index} className="p-8 container lg:p-12">
                     <div
-                      className="flex flex-col lg:flex-row lg:py-10"
-                      key={index}
+                      className="flex flex-col lg:flex-row"
                     >
-                      <div className="p-8 lg:w-1/2 max-w-xl mx-auto">
+                      <div className="lg:w-1/2 max-w-xl mx-auto">
                         <HTMLContent
                           className="content"
                           content={slice.primary.text.html}
                         />
                       </div>
 
-                      <div className="lg:p-8 lg:w-1/2">
+                      <div className="lg:w-1/2">
                         <GalleryCarousel images={slice.items} />
                       </div>
                     </div>
@@ -44,22 +43,22 @@ export default class SliceZone extends Component {
                 )
               case "classes_timetable":
                 return (
-                  <div key={index}>
+                  <div className="p-4 container lg:p-12" key={index}>
                     <ClassesTimetable />
                   </div>
                 )
               case "text_section":
                 return (
-                  <div className="container" key={index}>
+                  <div className="p-8 container lg:p-12" key={index}>
                     <HTMLContent
-                      className="content p-8"
+                      className="content"
                       content={slice.primary.rich_text.html}
                     />
                   </div>
                 )
               case "prices":
                 return (
-                  <div className="container" key={index}>
+                  <div className="p-8 container lg:p-12" key={index}>
                     <Prices />
                   </div>
                 )

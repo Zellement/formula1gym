@@ -52,7 +52,7 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <div className="gradient-orange--vertical-broken-light">
-        <OpeningHours />
+        <OpeningHours listed={false} />
         <Header siteTitle={data.site.siteMetadata.title} />
       </div>
       <AnimatePresence>

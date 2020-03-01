@@ -18,7 +18,7 @@ const Nav = class extends React.Component {
     return (     
     <nav className="lg:flex lg:content-end lg:justify-end lg:flex-col lg:ml-auto">
       <div className={`navigation-wrapper navigation-wrapper--${menuActive}`} >
-        <ul className="md:bg-red md:flex md:w-full md:flex-row md:justify-start md:items-stretch">
+        <ul className="lg:flex lg:w-full lg:flex-row lg:justify-start lg:items-stretch">
           <li className="navigation-wrapper__list-item">
             <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/">Home</Link>
           </li>
@@ -40,7 +40,7 @@ const Nav = class extends React.Component {
           <li className="navigation-wrapper__list-item">
             <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/find-us">Find Us</Link>
           </li>
-          <li className="navigation-wrapper__list-item">
+          <li className="navigation-wrapper__list-item mt-4 lg:mt-0">
             <JoinNow />
           </li>
         </ul>

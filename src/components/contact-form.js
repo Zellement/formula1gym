@@ -36,7 +36,7 @@ export default class Contact extends React.Component {
     return (
         <form
           className="form"
-          name="contact"
+          name="quick-contact"
           method="post"
           action="/thanks"
           data-netlify="true"
@@ -45,20 +45,16 @@ export default class Contact extends React.Component {
         >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
-            <p hidden>
-              <label>
-                Don’t fill this out:{" "}
-                <input name="bot-field" />
-              </label>
-            </p>
-
-            <label>Your Name <input placeholder="Enter your name" type="text" name="name" onChange={this.handleChange} /></label>   
-            <label>Your Email <input placeholder="Enter your email"  type="email" name="email" onChange={this.handleChange} /></label>
-            <label>Your Telephone <input placeholder="Enter your telephone" type="text" name="telephone" onChange={this.handleChange} /></label>
-            <label>Venue <input placeholder="Enter your venue" type="text" name="venue" onChange={this.handleChange} /></label>
-            <label>Date &amp; time requested <input placeholder="Enter your date and time" type="text" name="datetime" onChange={this.handleChange} /></label>
-            <label>Details <textarea placeholder="Enter any additional information" rows="5" name="details" onChange={this.handleChange}></textarea></label>
-            <button className="btn btn--deep-blue" type="submit">Send booking request</button>
+            {/* <p hidden>
+                Don't fill this out:{" "} */}
+                <label className="hidden">Do not fill this in<input name="bot-field" /></label>
+            {/* </p> */}
+            <div className="flex flex-wrap flex-col justify-between">
+              <label className="flex flex-1 m-1"><span className="hidden">Name</span><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Name" type="text" name="name" onChange={this.handleChange} /></label>
+              <label className="flex flex-1 m-1"><span className="hidden">Email</span><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Email"  type="email" name="email" onChange={this.handleChange} /></label>
+              <label className="flex flex-1 m-1"><span className="hidden">Telephone</span><input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Telephone" type="text" name="telephone" onChange={this.handleChange} /></label>
+              <button className="btn btn-yellow text-orange-semidark p-0 flex-1 m-1" type="submit"><span className="whitespace-no-wrap block p-4">Book induction</span></button>
+            </div>
         </form>
     );
   }

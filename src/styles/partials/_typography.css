@@ -57,5 +57,9 @@ h2 {
     @apply text-lg;
   }
 
+  a {
+    @apply text-orange-semidark;
+  }
+
 
 }

@@ -49,13 +49,12 @@ const Prices = () => {
             </span>
           </span>
           <span className="block leading-tight">Direct Debit <span className="block">per month</span></span>
-          <div className="absolute top-0 right-0 max-w-90 flex justify-center p-2 flex-col bg-gray-200 -mt-4 mr-1 rounded-lg shadow md:left-0 md:right-inherit lg:-ml-4">
+          <div className="absolute top-0 right-0 max-w-90 flex justify-center p-2 flex-col bg-gray-200 -mt-4 mr-1 sm:mr-2 rounded-lg shadow md:left-0 md:right-inherit lg:-ml-4 md:ml-2">
             <GiStarsStack className="text-5xl text-yellow block mx-auto" />
             <span className="text-xs text-gray-600">Most popular</span>
           </div>
         </div>
-        <div className="p-2 bg-gray-900 -mt-4 pt-8 pb-8 md:m-0 md:p-8 lg:rounded-br-lg lg:rounded-tr-lg">
-          <h2 className="block text-center text-2xl m-0"></h2>
+        <div className="p-2 gradient-dark-grey--vertical -mt-4 pt-8 pb-8 md:m-0 md:p-8 lg:rounded-br-lg lg:rounded-tr-lg">
           <Benefits showTitle={true} />
         </div>
       </div>
@@ -112,7 +111,7 @@ const Prices = () => {
         </div>
         
       <div className="block flex justify-center mt-6"><JoinNow /></div>
-      
+
       </div>
     </div>
   )
