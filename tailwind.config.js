@@ -9,6 +9,8 @@ module.exports = {
       '250': '250px',
       '200': '200px',
       '150': '150px',
+      '42': '42px',
+      '80': '80px'
     },
     extend: {
       padding: {
@@ -29,9 +31,6 @@ module.exports = {
         '50': '50px',
         '75': '75px',
         '400': '400px'
-      },
-      minHeight: {
-        '42': '42px'
       },
       maxWidth: {
         '200': '200px',
@@ -57,6 +56,7 @@ module.exports = {
           dark: '#0077b7'
         },
         orange: {
+          light: '#fcf2e3',
           default: '#FF9900',
           semidark: '#AD5E00',
         },

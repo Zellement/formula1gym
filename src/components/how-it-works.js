@@ -4,7 +4,7 @@ import BackgroundImage from 'gatsby-background-image'
 import { HTMLContent } from '../components/content'
 import QuickContactForm from '../components/quick-contact-form'
 
-const HowItWorks = ({ containerClass }) => {
+const HowItWorks = () => {
 	const data = useStaticQuery(graphql`
     query MyQuery {
       allPrismicSiteSpecific {
@@ -74,7 +74,7 @@ const HowItWorks = ({ containerClass }) => {
 
 						<div className="flex flex-col md:flex-row">
 
-							<BackgroundImage className={whyChooseData.primary.image_class.text + " w-full min-h-200 sm:min-h-250 md:w-1/2 bg-top"} fluid={whyChooseData.primary.image.localFile.childImageSharp.fluid}></BackgroundImage>
+							<BackgroundImage className={whyChooseData.primary.image_class.text + " w-full min-h-250 sm:min-h-250 md:w-1/2 bg-top"} fluid={whyChooseData.primary.image.localFile.childImageSharp.fluid}></BackgroundImage>
 
 							<div className="w-full p-8 md:w-1/2 md:p-12 lg:p-20">
 

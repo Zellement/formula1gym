@@ -1,5 +1,8 @@
 body {
   @apply font-sans;
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
 }
 
 /* Headings */

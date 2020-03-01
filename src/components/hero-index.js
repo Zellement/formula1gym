@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const HeroIndex = () => {
   return (
-    <div className="w-100 text-white p-4 lg:flex lg:flex-wrap lg:px-16">
+    <div className="container text-white p-4 lg:flex lg:flex-wrap lg:px-16">
 
 		<div className="lg:w-1/2">
 

@@ -3,6 +3,7 @@ import GalleryCarousel from "./gallery-carousel"
 import { HTMLContent } from "./content"
 import MeetTheTeam from "./meet-the-team"
 import ClassesTimetable from "./classes-timetable"
+import Prices from "./prices"
 // import { BodyText, CodeBlock, Image, Quote } from '../components/slices'
 
 export default class SliceZone extends Component {
@@ -56,10 +57,10 @@ export default class SliceZone extends Component {
                     />
                   </div>
                 )
-              case "image_gallery":
+              case "prices":
                 return (
-                  <div className="w-100 bg-red" key={index}>
-                    This will be a gallery
+                  <div className="container" key={index}>
+                    <Prices />
                   </div>
                 )
               default:

@@ -13,8 +13,8 @@ const MeetTheTeam = () => {
               alt
               localFile {
                 childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                  fluid(quality: 90, maxWidth: 300, maxHeight: 364) {
+                    ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }

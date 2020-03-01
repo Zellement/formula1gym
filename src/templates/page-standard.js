@@ -78,6 +78,10 @@ export const query = graphql`
             id
             slice_type
           }
+          ... on PrismicPagePageContentPrices {
+            id
+            slice_type
+          }
           ... on PrismicPagePageContentTextSection {
             id
             slice_type
