@@ -27,6 +27,7 @@
     "react-icons": "^3.9.0",
     "react-iframe": "^1.8.0",
     "react-lazy-load": "^3.0.13",
+    "simple-react-validator": "^1.4.5",
     "smooth-scroll": "^16.1.2"
   },
   "devDependencies": {
