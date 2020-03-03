@@ -19,6 +19,7 @@ const Footer = () => {
   `)
   return (
     <>
+    <Telephone className="fixed bottom-0 right-0 mb-2 mr-2 z-50 text-2xl text-white text-center pt-1 gradient-orange--vertical rounded-full w-50 h-50" hideNumber={true} />
       <footer className="gradient-orange--vertical order-1 text-white p-10 pb-20 md:py-16 sm:min-w-400 md:order-first">
         <div className="container">
 
@@ -37,8 +38,13 @@ const Footer = () => {
             {getYear + " " + data.site.siteMetadata.title}
           </p>
 
-          <p><strong>Discounted Parking</strong>
-            <br />Up to 90 mins - £1.50 | 2 hours - £2 | 3 hours - £3 | 4 hours - £4</p>
+          <p><strong>Discounted Parking</strong></p>
+            <ul>
+              <li>Up to 60 mins - £1</li>
+              <li>90 mins - £1.50</li>
+              <li>2 hours - £2</li>
+              <li>3 hours - £3</li>
+            </ul>
         </div>
       </footer>
 
