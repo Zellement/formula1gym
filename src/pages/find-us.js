@@ -7,7 +7,7 @@ import { HTMLContent } from "../components/content"
 import OpeningHours from "../components/opening-hours"
 import Telephone from "../components/contact-options/telephone"
 import Email from "../components/contact-options/email"
-import { FaFacebookSquare } from "react-icons/fa"
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
 
 const duration = 0.35
 
@@ -84,9 +84,17 @@ const FindUsPage = () => {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://www.facebook.com/Formula-One-Gym-161546613946894/?ref=br_rs"
+                  href="https://www.facebook.com/Formula-One-Gym-161546613946894/"
                 >
-                  <FaFacebookSquare className="inline -mt-1" /> / FormulaOneGym
+                  <FaFacebookSquare className="inline -mt-1" /> / Formula-One-Gym
+                </a>
+                <br />
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://www.instagram.com/formulaonegym/"
+                >
+                  <FaInstagram className="inline -mt-1" /> / formulaonegym
                 </a>
               </p>
 
