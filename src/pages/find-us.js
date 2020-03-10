@@ -56,8 +56,8 @@ const FindUsPage = () => {
         >
           <motion.div className="container" variants={container}>
             <Hero
-              pageTitle="Find us"
-              pageIntro="We're easy to find, just up the tram tracks off Old Market Square"
+              pageTitle="Contact / Find us"
+              pageIntro="We have a perfectly convenient location for anyone looking for a Nottingham city centre gym - we're easy to find, just up the tram tracks off old market square"
             />
           </motion.div>
         </motion.div>
@@ -69,7 +69,9 @@ const FindUsPage = () => {
         >
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
-              <h1>Find us</h1>
+              <h1>Contact us</h1>
+
+              <p className="mb-6">If you have any questions please feel free to contact us by phone or email so that we can help.</p>
               <p className="mb-6">
                 <Telephone />
               </p>
