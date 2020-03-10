@@ -1,41 +1,27 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const OpeningHours = ({ listed }) => {
-  var today = new Date()
-  var dd = today.getDay()
+const OpeningHours = () => {
 
   const daysofweek = [
-    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
+    "Sunday",
   ]
 
   const hours = [
-    "09:00 - 18:00",
     "06:30 - 21:00",
     "06:30 - 21:00",
     "06:30 - 21:00",
     "06:30 - 21:00",
     "06:30 - 20:00",
     "09:00 - 18:00",
+    "09:00 - 18:00",
   ]
-
-  if (!listed) {
-    return (
-      <>
-        <div className="w-100 gradient-orange--horizontal p-1 text-xs text-white md:no-bg lg:absolute lg:top-0 lg:right-0">
-          <Link to="/find-us">
-            Open {daysofweek[dd]} {hours[dd]}
-          </Link>
-        </div>
-      </>
-    )
-  } else {
     return (
     <div className="">
       <h2>Opening hours</h2>
@@ -50,7 +36,6 @@ const OpeningHours = ({ listed }) => {
 
     </div> 
     )
-  }
 }
 
 export default OpeningHours
