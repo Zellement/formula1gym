@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { motion, AnimatePresence } from "framer-motion"
-import OpeningHours from "./opening-hours"
+import Phone from "./contact-options/telephone"
 
 import Header from "./header"
 import Map from "./map"
@@ -52,7 +52,7 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <div className="gradient-orange--vertical-broken-light">
-        <OpeningHours listed={false} />
+        <div className="w-100 gradient-orange--horizontal p-1 text-xs text-white lg:hidden"><Phone /></div>
         <Header siteTitle={data.site.siteMetadata.title} />
       </div>
       <AnimatePresence>
