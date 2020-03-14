@@ -57,7 +57,7 @@ export default class SliceZone extends Component {
                 )
               case "benefits":
                 return (
-                  <div className="gradient-orange--vertical text-white">
+                  <div key={index} className="gradient-orange--vertical text-white">
                     <div className="container p-8">
                       <Benefits showTitle={true} />
                     </div>
@@ -65,11 +65,11 @@ export default class SliceZone extends Component {
                 )
               case "facilities":
                 return (
-                  <Facilities />
+                  <div key={index}><Facilities /></div>
                 )
               case "prices":
                 return (
-                  <div className="p-8 container lg:p-12" key={index}>
+                  <div key={index} className="p-8 container lg:p-12">
                     <Prices />
                   </div>
                 )

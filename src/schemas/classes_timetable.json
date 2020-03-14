@@ -1,0 +1,91 @@
+{
+  "Main" : {
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "Title"
+      }
+    },
+    "classes_key" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "class_name" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+              "label" : "Class Name"
+            }
+          },
+          "class_description" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "paragraph",
+              "label" : "Class Description"
+            }
+          }
+        },
+        "label" : "Classes Key"
+      }
+    },
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : {
+          "day_of_the_week" : [ ],
+          "class_key" : [ ]
+        },
+        "choices" : {
+          "day_of_the_week" : {
+            "type" : "Slice",
+            "fieldset" : "Day of the Week",
+            "description" : "Add a new day of the week",
+            "icon" : "access_time",
+            "display" : "grid",
+            "non-repeat" : {
+              "day" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label" : "Day"
+                }
+              }
+            },
+            "repeat" : {
+              "time" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph",
+                  "label" : "Time"
+                }
+              },
+              "class" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label" : "Class"
+                }
+              },
+              "duration" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph",
+                  "label" : "Duration"
+                }
+              },
+              "instructor" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Instructor"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

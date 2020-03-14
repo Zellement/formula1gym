@@ -107,12 +107,8 @@ export const query = graphql`
             slice_type
             items {
               image {
-                localFile {
-                  childImageSharp {
-                    fluid {
-                      ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                    }
-                  }
+                fluid(maxWidth: 1000, maxHeight:825) {
+                    ...GatsbyPrismicImageFluid
                 }
               }
             }

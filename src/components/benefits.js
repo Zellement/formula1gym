@@ -4,26 +4,25 @@ import { FaRegCheckCircle } from "react-icons/fa"
 
 const Benefits = ({iconColour, showTitle}) => {
   const data = useStaticQuery(graphql`
-    query BenefitsQuery {
-      allPrismicSiteSpecific {
-        edges {
-          node {
-            data {
-              title {
-                text
-              }
-              benefits {
-                benefit {
-                  raw {
-                    text
-                  }
-                }
-              }
+query BenefitsQuery {
+  allPrismicSiteSpecific {
+    edges {
+      node {
+        data {
+          title {
+            text
+          }
+          benefits {
+            benefit {
+              text
             }
           }
         }
       }
     }
+  }
+}
+
   `)
 
   //For the incremental numbers
@@ -40,7 +39,7 @@ const Benefits = ({iconColour, showTitle}) => {
         {data.allPrismicSiteSpecific.edges[0].node.data.benefits.map(
           benefitsData => (
           <li key={i} className="text-xs w-1/2 sm:text-sm md:text-base md:my-1">
-          <FaRegCheckCircle className={iconColour + " inline mr-2"} /> {benefitsData.benefit.raw[0].text}
+          <FaRegCheckCircle className={iconColour + " inline mr-2"} /> {benefitsData.benefit.text}
         {increaseCount()}
           </li>
           )

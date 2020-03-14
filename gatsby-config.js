@@ -18,14 +18,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
-    { 
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
         tailwind: true,
-        whitelist: ['order-1','order-0'],
-        whitelistPatterns: [/is-active/, 'order$'],
-      }
+        whitelist: ["order-1", "order-0"],
+        whitelistPatterns: [/is-active/, "order$"],
+      },
     },
     // {
     //   resolve: `gatsby-plugin-google-fonts`,
@@ -42,7 +42,13 @@ module.exports = {
       options: {
         repositoryName: `formula1gym`,
         accessToken: `${process.env.API_KEY}`,
-        //linkResolver: ({ node, key, value }) => post => `/${post.uid}`,
+        schemas: {
+          classes_timetable: require("./src/schemas/classes_timetable.json"),
+          homepage: require("./src/schemas/homepage.json"),
+          meet_the_team: require("./src/schemas/meet_the_team.json"),
+          page: require("./src/schemas/page.json"),
+          site_specific: require("./src/schemas/site_specific.json"),
+        },
       },
     },
     // {

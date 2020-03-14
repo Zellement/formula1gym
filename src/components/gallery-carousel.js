@@ -73,7 +73,7 @@ class GalleryCarousel extends Component {
                     >
                       <Img
                         backgroundColor="#26486E"
-                        fluid={image.image.localFile.childImageSharp.fluid}
+                        fluid={image.image.fluid}
                         key={image.title}
                         alt={image.alt}
                         className="w-full block"

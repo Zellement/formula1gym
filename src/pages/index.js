@@ -77,18 +77,16 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 export const query = graphql`
-  query HomeQuery {
-    prismicHomepage {
-      data {
-        body {
+query HomeQuery {
+  prismicHomepage {
+    data {
+      body {
+        ... on PrismicHomepageBodyTextGallery {
+          id
           items {
             image {
-              localFile {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                  }
-                }
+              fluid {
+                ...GatsbyPrismicImageFluid
               }
             }
           }
@@ -101,4 +99,6 @@ export const query = graphql`
       }
     }
   }
+}
+
 `

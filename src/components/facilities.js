@@ -13,12 +13,8 @@ const Facilities = () => {
               text
             }
             facility_icon {
-              localFile {
-                childImageSharp {
-                  fixed(height: 64, width: 64) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
+              fixed(height: 64, width: 64) {
+                ...GatsbyPrismicImageFixed
               }
             }
           }
@@ -40,7 +36,7 @@ const Facilities = () => {
             >
               <Img
                 className="block max-w-50 mx-auto"
-                fixed={facilitiesData.facility_icon.localFile.childImageSharp.fixed}
+                fixed={facilitiesData.facility_icon.fixed}
               />
               <span className="text-sm">
                 <span className="font-bold">{facilitiesData.facility.text}</span>

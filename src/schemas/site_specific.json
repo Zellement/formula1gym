@@ -1,0 +1,229 @@
+{
+  "Main" : {
+    "title1" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "Title"
+      }
+    },
+    "telephone" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "Telephone"
+      }
+    },
+    "email" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "Email"
+      }
+    },
+    "address" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label" : "Address"
+      }
+    }
+  },
+  "How It Works" : {
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : {
+          "image___text" : [ {
+            "name" : "image_left__text_right",
+            "display" : "Image Left, Text Right"
+          }, {
+            "name" : "image_right__text_left",
+            "display" : "Image Right, Text Left"
+          } ]
+        },
+        "choices" : {
+          "image___text" : {
+            "type" : "Slice",
+            "fieldset" : "Image & Text",
+            "description" : "Image and text",
+            "icon" : "aspect_ratio",
+            "display" : "list",
+            "non-repeat" : {
+              "image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Image"
+                }
+              },
+              "image_class" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label" : "Image Class"
+                }
+              },
+              "title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label" : "Title"
+                }
+              },
+              "text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "label" : "Text"
+                }
+              }
+            },
+            "repeat" : { }
+          }
+        }
+      }
+    }
+  },
+  "Benefits" : {
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "Title"
+      }
+    },
+    "benefits" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "benefit" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+              "label" : "Benefit"
+            }
+          }
+        },
+        "label" : "Benefits"
+      }
+    }
+  },
+  "Ready to Start?" : {
+    "induction_text" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label" : "Induction text"
+      }
+    },
+    "join_today_text" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label" : "Join Today text"
+      }
+    }
+  },
+  "Facilities" : {
+    "facilities" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "facility_icon" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : { },
+              "thumbnails" : [ ],
+              "label" : "Facility Icon"
+            }
+          },
+          "facility" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+              "label" : "Facility"
+            }
+          }
+        },
+        "label" : "Facilities"
+      }
+    }
+  },
+  "Prices" : {
+    "title2" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "Title"
+      }
+    },
+    "direct_debit_price" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "Direct Debit Price"
+      }
+    },
+    "upfront_prices" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "type" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+              "label" : "Type"
+            }
+          },
+          "price" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+              "label" : "Price"
+            }
+          }
+        },
+        "label" : "Upfront Prices"
+      }
+    },
+    "student_prices" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "type" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+              "label" : "Type"
+            }
+          },
+          "price" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+              "label" : "Price"
+            }
+          }
+        },
+        "label" : "Student Prices"
+      }
+    },
+    "couples_membership_price" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "Couples Membership Price"
+      }
+    },
+    "corporate_membership_price" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "Corporate Membership Price"
+      }
+    }
+  }
+}
