@@ -87,7 +87,7 @@ const ClassesTimetable = () => {
               ))}
             </div>
           </div>
-          <div className="p-8 lg:w-2/5 text-sm bg-gray-200 mt-10">
+          <div className="p-8 lg:w-2/5 text-sm bg-gray-200">
             <h2>About our classes</h2>
             {data.prismicClassesTimetable.data.classes_key.map(
               (classesKeyData, index) => (

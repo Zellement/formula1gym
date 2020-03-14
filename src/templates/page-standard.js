@@ -3,8 +3,6 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
 import Hero from "../components/hero"
-import Facilities from "../components/facilities"
-import Benefits from "../components/benefits"
 import SliceZone from "../components/slicezone"
 import ReadyToBegin from "../components/ready-to-begin"
 
@@ -54,13 +52,6 @@ const IndexPage = ({ data }) => {
           <SliceZone allSlices={post.data.page_content} />
         </motion.div>
 
-        <div className="gradient-orange--vertical text-white">
-          <div className="container p-8">
-            <Benefits showTitle={true} />
-          </div>
-        </div>
-        <Facilities />
-
         <ReadyToBegin />
       </motion.section>
     </>
@@ -84,6 +75,14 @@ export const query = graphql`
             slice_type
           }
           ... on PrismicPagePageContentPrices {
+            id
+            slice_type
+          }
+          ... on PrismicPagePageContentFacilities {
+            id
+            slice_type
+          }
+          ... on PrismicPagePageContentBenefits {
             id
             slice_type
           }

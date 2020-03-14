@@ -4,6 +4,8 @@ import { HTMLContent } from "./content"
 import MeetTheTeam from "./meet-the-team"
 import ClassesTimetable from "./classes-timetable"
 import Prices from "./prices"
+import Benefits from "./benefits"
+import Facilities from "./facilities"
 // import { BodyText, CodeBlock, Image, Quote } from '../components/slices'
 
 export default class SliceZone extends Component {
@@ -18,9 +20,7 @@ export default class SliceZone extends Component {
               case "text___gallery":
                 return (
                   <div key={index} className="p-8 container lg:p-12">
-                    <div
-                      className="flex flex-col lg:flex-row"
-                    >
+                    <div className="flex flex-col lg:flex-row">
                       <div className="lg:w-1/2 max-w-xl mx-auto">
                         <HTMLContent
                           className="content"
@@ -54,6 +54,18 @@ export default class SliceZone extends Component {
                       content={slice.primary.rich_text.html}
                     />
                   </div>
+                )
+              case "benefits":
+                return (
+                  <div className="gradient-orange--vertical text-white">
+                    <div className="container p-8">
+                      <Benefits showTitle={true} />
+                    </div>
+                  </div>
+                )
+              case "facilities":
+                return (
+                  <Facilities />
                 )
               case "prices":
                 return (

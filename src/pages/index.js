@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => {
   const post = data.prismicHomepage.data.body[0]
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Nottingham Gym and Women-Only Gym" description="Formula One Health & Fitness in Nottingham city centre offers a women-only gym, mixed gym, free classes and more!" />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div
