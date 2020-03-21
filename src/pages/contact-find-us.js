@@ -56,7 +56,7 @@ const FindUsPage = () => {
         >
           <motion.div className="container" variants={container}>
             <Hero
-              pageTitle="Contact / Find us"
+              pageTitle="Find us"
               pageIntro="We have a perfectly convenient location for anyone looking for a Nottingham city centre gym - we're easy to find, just up the tram tracks off old market square"
             />
           </motion.div>

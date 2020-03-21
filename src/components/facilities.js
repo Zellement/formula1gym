@@ -27,7 +27,6 @@ const Facilities = () => {
     <>
       <div className="p-8 text-center bg-gray-100 relative">
         <h2 className="font-display text-3xl md:text-5xl font-normal">Facilities</h2>
-		<p>We offer the following facilities, all of which are included in your membership.</p>
         <div className="flex flex-row flex-wrap sm:justify-center">
           {data.prismicSiteSpecific.data.facilities.map((facilitiesData, index) => (
             <div

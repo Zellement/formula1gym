@@ -74,8 +74,11 @@ Navigation
 }
 
 .navigation-wrapper__link {
-	@apply text-white font-bold block py-1 px-1 my-auto;
+	@apply text-white font-bold block py-1 px-1 my-auto ;
+	@screen lg {
+		@apply tracking-tight;
+	}
 	@screen xl {
-		@apply px-4
+		@apply px-4 tracking-normal;
 	}
 }
