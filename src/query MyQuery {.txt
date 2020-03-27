@@ -1,0 +1,14 @@
+query MyQuery {
+  allGooglePlacesReview(filter: {rating: {gte: 4}}) {
+    edges {
+      node {
+        id
+        profile_photo_url
+        author_name
+        relative_time_description
+        text
+        rating
+      }
+    }
+  }
+}

@@ -21,14 +21,14 @@ export default class SliceZone extends Component {
                 return (
                   <div key={index} className="p-8 container lg:p-12">
                     <div className="flex flex-col lg:flex-row">
-                      <div className="lg:w-1/2 max-w-xl mx-auto">
+                      <div className="lg:w-1/2 max-w-xl mx-auto lg:pr-4">
                         <HTMLContent
                           className="content"
                           content={slice.primary.text.html}
                         />
                       </div>
 
-                      <div className="lg:w-1/2">
+                      <div className="lg:w-1/2 lg:pl-4">
                         <GalleryCarousel images={slice.items} />
                       </div>
                     </div>
