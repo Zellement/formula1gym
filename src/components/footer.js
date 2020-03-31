@@ -19,7 +19,7 @@ const Footer = () => {
   `)
   return (
     <>
-    <Telephone className="fixed bottom-0 right-0 mb-2 mr-2 z-50 text-2xl text-white text-center pt-1 gradient-orange--vertical rounded-full w-50 h-50 lg:hidden" hideNumber={true} />
+    {/* <Telephone className="fixed bottom-0 right-0 mb-2 mr-2 z-50 text-2xl text-white text-center pt-1 gradient-orange--vertical rounded-full w-50 h-50 lg:hidden" hideNumber={true} /> */}
       <footer className="gradient-orange--vertical order-1 text-white p-10 pb-20 md:py-16 sm:min-w-400 md:order-first">
         <div className="container">
 

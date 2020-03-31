@@ -23,7 +23,7 @@ const item = {
   },
 }
 
-const WhoopsPage = () => {
+const ThankYouPage = () => {
   return (
     <>
       <SEO title="Thank You" />
@@ -36,8 +36,8 @@ const WhoopsPage = () => {
         >
           <motion.div className="container" variants={container}>
             <Hero
-              pageTitle="Whoops!"
-              pageIntro="Sorry, this page has disappeared or never existed."
+              pageTitle="Thank you!"
+              pageIntro="Thanks for requesting your free induction session. We'll be in touch within 48 hours to get you booked in."
             />
           </motion.div>
         </motion.div>
@@ -49,7 +49,7 @@ const WhoopsPage = () => {
         >
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
-              <h1>Sorry about that!</h1>
+              <h1>Thanks again!</h1>
 
               <p className="mb-6">Please <Link to="/">go to the homepage</Link>.</p>
           
@@ -63,4 +63,4 @@ const WhoopsPage = () => {
   )
 }
 
-export default WhoopsPage
+export default ThankYouPage

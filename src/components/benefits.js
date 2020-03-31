@@ -26,7 +26,6 @@ const Benefits = ({ iconColour, showTitle, hideStudent }) => {
 
   return (
     <>
-      {console.log(hideStudent)}
       {showTitle ? (
         <>
           <p className="font-bold text-lg md:text-xl mb-4 lg:max-w-xs">
