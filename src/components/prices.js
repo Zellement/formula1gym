@@ -46,7 +46,7 @@ const Prices = () => {
   return (
     <div className="">
       <div className="container max-w-5xl text-white mb-4 flex flex-col md:flex-row">
-        <div className="gradient-orange--vertical w-5/6 text-white p-4 text-center flex flex-col relative mx-auto rounded-lg shadow-xl md:rounded-none  md:justify-center lg:rounded-bl-lg">
+        <div className="gradient-orange--vertical w-5/6 text-white p-4 text-center flex flex-col relative mx-auto rounded-lg shadow-xl md:rounded-br-none  md:justify-center md:rounded-tr-none">
           <span className="block leading-tight">Only</span>
           <span className="">
             <span className="text-xl -mt-4">£</span>
@@ -60,14 +60,14 @@ const Prices = () => {
             <span className="text-xs text-gray-600">Most popular</span>
           </div>
         </div>
-        <div className="p-3 gradient-dark-grey--vertical -mt-4 pt-6 pb-3 md:m-0 md:p-8 lg:rounded-br-lg lg:rounded-tr-lg">
+        <div className="p-3 gradient-dark-grey--vertical -mt-4 pt-6 pb-3 md:m-0 md:p-8 rounded-lg md:rounded-bl-none md:rounded-tl-none">
           <Benefits hideStudent={true} showTitle={true} />
         </div>
       </div>
 
       <div className="block flex justify-center mt-6 mb-8"><JoinNow /></div>
 
-      <div className="p-4 lg:p-8">
+      <div className="">
 
         <h2 className="block text-center text-2xl mb-4">Upfront Memberships</h2>
         <div className="p-8 bg-gray-100 rounded-lg mb-4">
