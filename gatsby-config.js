@@ -24,7 +24,7 @@ module.exports = {
         printRejected: true,
         tailwind: true,
         whitelist: ["order-1", "order-0"],
-        whitelistPatterns: [/is-active/, "order$"],
+        whitelistPatterns: [/is-active/],
       },
     },
     // {
