@@ -65,7 +65,7 @@ const Prices = () => {
         </div>
       </div>
 
-      <div className="block flex justify-center mt-6"><JoinNow /></div>
+      <div className="block flex justify-center mt-6 mb-8"><JoinNow /></div>
 
       <div className="p-4 lg:p-8">
 
