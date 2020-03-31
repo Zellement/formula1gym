@@ -61,7 +61,7 @@ const Prices = () => {
           </div>
         </div>
         <div className="p-3 gradient-dark-grey--vertical -mt-4 pt-6 pb-3 md:m-0 md:p-8 lg:rounded-br-lg lg:rounded-tr-lg">
-          <Benefits showTitle={true} />
+          <Benefits hideStudent={true} showTitle={true} />
         </div>
       </div>
 
@@ -80,7 +80,7 @@ const Prices = () => {
               (upfrontPricesData, index) => (
                 <div key={index} className="w-1/3 bg-white rounded flex-col flex flex-auto justify-between m-2 shadow text-center md:w-1/4 lg:w-auto">
                   <p className="bg-orange-light font-bold text-gray-700 md:mb-6 p-4 min-h-80 sm:min-h-0 flex">
-                    <span class="m-auto">{upfrontPricesData.type.text}</span>
+                    <span className="m-auto">{upfrontPricesData.type.text}</span>
                   </p>
                   <p className="flex mx-auto justify-center content-end p-4">
                     <span className="md:text-2xl text-gray-400">£</span>
@@ -104,7 +104,7 @@ const Prices = () => {
               (studentPrices, index) => (
                 <div key={index} className="w-1/3 bg-white rounded flex-col flex flex-auto justify-between m-2 shadow text-center md:w-1/4 lg:w-auto">
                   <p className="bg-orange-light font-bold text-gray-700 md:mb-6 p-4 min-h-80 sm:min-h-0 flex">
-                    <span class="m-auto">{studentPrices.type.text}</span>
+                    <span className="m-auto">{studentPrices.type.text}</span>
                   </p>
                   <p className="flex mx-auto justify-center content-end p-4">
                     <span className="md:text-2xl text-gray-400">£</span>
