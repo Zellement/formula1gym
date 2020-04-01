@@ -32,6 +32,13 @@
               "single" : "paragraph",
               "label" : "Role"
             }
+          },
+          "bio" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph",
+              "label" : "Bio"
+            }
           }
         },
         "label" : "Team"
