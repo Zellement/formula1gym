@@ -23,7 +23,7 @@ module.exports = {
       options: {
         printRejected: true,
         tailwind: true,
-        whitelist: ["order-1", "order-0"],
+        whitelist: ["order-1", "order-0", "pre"],
         whitelistPatterns: [/is-active/, /order/]
       },
     },
