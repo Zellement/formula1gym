@@ -71,16 +71,16 @@ export default class Contact extends React.Component {
                 <label className="hidden">Do not fill this in<input name="bot-field" /></label>
             {/* </p> */}
             <div className="flex flex-wrap justify-between">
-              <label for="name" className="flex flex-1 m-1 relative"><span className="hidden">Name</span>
+              <label htmlFor="name" className="flex flex-1 m-1 relative"><span className="hidden">Name</span>
                 <input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Name" id="name" type="text" name="name" onChange={this.handleChange} />
                 {this.validator.message('name', this.state.name, 'required')}
               </label>
-              <label for="email" className="flex flex-1 m-1 relative"><span className="hidden">Email</span>
+              <label htmlFor="email" className="flex flex-1 m-1 relative"><span className="hidden">Email</span>
                 <input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Email"  id="email" type="email" name="email" onChange={this.handleChange} />
                 {this.validator.message('name', this.state.email, 'required|email')}
               </label>
-              <label for="telephone" className="flex flex-1 m-1 relative"><span className="hidden">Telephone</span>
-                <input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Telephone" id="telephone type="text" name="telephone" onChange={this.handleChange} />
+              <label htmlFor="telephone" className="flex flex-1 m-1 relative"><span className="hidden">Telephone</span>
+                <input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Telephone" id="telephone" type="text" name="telephone" onChange={this.handleChange} />
                {this.validator.message('name', this.state.telephone, 'required')}
               </label>
               <button className="btn btn-yellow text-orange-semidark p-0 flex-1 m-1" type="submit"><span className="whitespace-no-wrap block p-4">Book induction</span></button>
