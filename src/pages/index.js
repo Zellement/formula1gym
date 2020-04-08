@@ -68,7 +68,6 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <div id="howitworks"></div>
       </motion.section>
     </>
   )
