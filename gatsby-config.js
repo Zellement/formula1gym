@@ -17,6 +17,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: ["https://www.google-analytics.com"],
+      },
+    },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
@@ -24,7 +30,7 @@ module.exports = {
         printRejected: true,
         tailwind: true,
         whitelist: ["order-1", "order-0", "pre"],
-        whitelistPatterns: [/is-active/, /order/]
+        whitelistPatterns: [/is-active/, /order/],
       },
     },
     // {
