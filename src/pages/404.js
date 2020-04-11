@@ -26,7 +26,7 @@ const item = {
 const WhoopsPage = () => {
   return (
     <>
-      <SEO title="Thank You" />
+      <SEO title="Page not found" />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div

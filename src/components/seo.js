@@ -15,14 +15,18 @@ function SEO({ description, lang, meta, title }) {
           }
         }
         file(relativePath: { eq: "ogimage.jpg" }) {
+          id
           absolutePath
+          publicURL
+          relativePath
+          dir
         }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const ogImage = file.absolutePath
+  const ogImage = file
 
   console.log(ogImage)
 
