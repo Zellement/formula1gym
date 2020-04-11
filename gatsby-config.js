@@ -5,8 +5,8 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Formula One Gym`,
-    description: `Nottingham's favourite city centre gym`,
-    author: `@Zellenent`,
+    description: `No joining fee or contract, just £19pm. Student discount also available. See our website for what it includes!`,
+    author: `@Zellement`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -83,8 +83,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `formula1gym`,
-        short_name: `formula1gym`,
+        name: `formulaonegym`,
+        short_name: `formulaonegym`,
         start_url: `/`,
         background_color: `#000`,
         theme_color: `#000`,
