@@ -71,19 +71,21 @@ export default class Contact extends React.Component {
                 <label className="hidden">Do not fill this in<input name="bot-field" /></label>
             {/* </p> */}
             <div className="flex flex-wrap justify-between">
-              <label className="flex flex-1 m-1 relative">
+              <label className="flex w-full xl:w-1/2 p-1 relative">
                 <input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Name" type="text" name="name" onChange={this.handleChange} />
                 {this.validator.message('name', this.state.name, 'required')}
               </label>
-              <label className="flex flex-1 m-1 relative">
+              <label className="flex w-full xl:w-1/2 p-1 relative">
                 <input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Email" type="email" name="email" onChange={this.handleChange} />
                 {this.validator.message('name', this.state.email, 'required|email')}
               </label>
-              <label className="flex flex-1 m-1 relative">
+              <label className="flex w-full xl:w-1/2 p-1 relative">
                 <input className="bg-gray-300 flex-grow p-4 rounded-full" placeholder="Telephone" type="text" name="telephone" onChange={this.handleChange} />
                {this.validator.message('name', this.state.telephone, 'required')}
               </label>
-              <button className="btn btn-yellow text-orange-semidark p-0 flex-1 m-1" type="submit"><span className="whitespace-no-wrap block p-4">Book induction</span></button>
+              <span className="w-full xl:w-1/2 p-1">
+                <button className="btn w-full btn-yellow text-orange-semidark p-0" type="submit"><span className="whitespace-no-wrap block p-4">Book induction</span></button>
+              </span>
             </div>
         </form>
     );
