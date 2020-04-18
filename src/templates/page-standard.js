@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
-      <SEO title={post.data.meta_title} description={post.data.meta_title} />
+      <SEO title={post.data.meta_title + ' | Formula One Gym'} description={post.data.meta_title} />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div

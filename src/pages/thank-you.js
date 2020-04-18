@@ -26,7 +26,7 @@ const item = {
 const ThankYouPage = () => {
   return (
     <>
-      <SEO title="Thank You" />
+      <SEO title="Thank You | Formula One Gym" />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div

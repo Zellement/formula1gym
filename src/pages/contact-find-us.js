@@ -46,7 +46,7 @@ const FindUsPage = () => {
   `)
   return (
     <>
-      <SEO title="Find Us" />
+      <SEO title="Find Us | Formula One Gym" />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div

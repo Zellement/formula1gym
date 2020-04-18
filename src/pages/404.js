@@ -26,7 +26,7 @@ const item = {
 const WhoopsPage = () => {
   return (
     <>
-      <SEO title="Page not found" />
+      <SEO title="Page not found | Formula One Gym" />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div

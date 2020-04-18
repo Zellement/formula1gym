@@ -31,7 +31,9 @@ const IndexPage = ({ data }) => {
   const post = data.prismicHomepage.data.body[0]
   return (
     <>
-      <SEO title="Formula One Gym | Nottingham City Centre" description="No joining fee or contract, just £19pm. Student discount also available. See our website for what it includes!" />
+      <SEO
+        title="Formula One Gym | Nottingham City Centre"
+        description="No joining fee or contract, just £19pm. Student discount also available. See our website for what it includes!" />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div
