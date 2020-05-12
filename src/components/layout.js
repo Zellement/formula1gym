@@ -7,7 +7,7 @@ import Phone from "./contact-options/telephone"
 import Header from "./header"
 import Map from "./map"
 import Footer from "./footer"
-// import Reviews from "./googlereviews"
+import GReviews from "./googlereviews"
 import "../styles/main.css"
 
 const duration = 0.35
@@ -53,7 +53,9 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <div className="gradient-orange--vertical-broken-light">
-        <div className="w-100 gradient-orange--horizontal p-1 text-xs text-white lg:hidden"><Phone /></div>
+        <div className="p-1 text-xs text-white w-100 gradient-orange--horizontal lg:hidden">
+          <Phone />
+        </div>
         <Header siteTitle={data.site.siteMetadata.title} />
       </div>
       <AnimatePresence>
@@ -67,8 +69,8 @@ const Layout = ({ children, location }) => {
           {children}
         </motion.main>
       </AnimatePresence>
-    {/* <Reviews /> */}
-      <div className="flex flex-col md:flex-row mt-10">
+      <GReviews />
+      <div className="flex flex-col mt-10 md:flex-row">
         <Footer />
         <Map />
       </div>
