@@ -58,7 +58,7 @@ const IndexPage = ({ data }) => {
 
         <div className="container">
           <div className="flex flex-col lg:flex-row lg:py-10">
-            <div className="p-8 lg:w-1/2 max-w-xl mx-auto">
+            <div className="max-w-xl p-8 mx-auto lg:w-1/2">
               <HTMLContent
                 className="content"
                 content={post.primary.text.html}

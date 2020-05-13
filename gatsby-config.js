@@ -57,13 +57,13 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: `gatsby-source-google-places`,
-    //   options: {
-    //     placeId: `ChIJdXtvmdXDeUgR877Bo28YMYU`,
-    //     apiKey: `${process.env.PLACES_KEY}`
-    //   }
-    // },
+    {
+      resolve: `gatsby-source-google-places`,
+      options: {
+        placeId: `ChIJdXtvmdXDeUgR877Bo28YMYU`,
+        apiKey: `${process.env.PLACES_KEY}`
+      }
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

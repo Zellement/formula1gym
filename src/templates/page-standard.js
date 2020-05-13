@@ -82,6 +82,10 @@ export const query = graphql`
             id
             slice_type
           }
+          ... on PrismicPagePageContentGoogleReviews {
+            id
+            slice_type
+          }
           ... on PrismicPagePageContentBenefits {
             id
             slice_type
