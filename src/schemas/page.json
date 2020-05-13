@@ -46,7 +46,8 @@
           "meet_the_team" : [ ],
           "classes_timetable" : [ ],
           "facilities" : [ ],
-          "benefits" : [ ]
+          "benefits" : [ ],
+          "google_reviews" : [ ]
         },
         "choices" : {
           "text_section" : {
@@ -204,6 +205,15 @@
             "fieldset" : "Benefits",
             "description" : "Show benefits.",
             "icon" : "spellcheck",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : { }
+          },
+          "google_reviews" : {
+            "type" : "Slice",
+            "fieldset" : "Google Reviews",
+            "description" : "Return Google Reviews.",
+            "icon" : "stars",
             "display" : "list",
             "non-repeat" : { },
             "repeat" : { }

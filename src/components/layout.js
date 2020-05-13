@@ -7,7 +7,6 @@ import Phone from "./contact-options/telephone"
 import Header from "./header"
 import Map from "./map"
 import Footer from "./footer"
-import GReviews from "./googlereviews"
 import "../styles/main.css"
 
 const duration = 0.35
@@ -69,7 +68,6 @@ const Layout = ({ children, location }) => {
           {children}
         </motion.main>
       </AnimatePresence>
-      <GReviews />
       <div className="flex flex-col mt-10 md:flex-row">
         <Footer />
         <Map />

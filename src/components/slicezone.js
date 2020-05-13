@@ -6,6 +6,7 @@ import ClassesTimetable from "./classes-timetable"
 import Prices from "./prices"
 import Benefits from "./benefits"
 import Facilities from "./facilities"
+import GoogleReviews from "./googlereviews"
 // import { BodyText, CodeBlock, Image, Quote } from '../components/slices'
 
 export default class SliceZone extends Component {
@@ -19,9 +20,9 @@ export default class SliceZone extends Component {
             switch (slice.slice_type) {
               case "text___gallery":
                 return (
-                  <div key={index} className="p-8 container lg:p-12">
+                  <div key={index} className="container p-8 lg:p-12">
                     <div className="flex flex-col lg:flex-row">
-                      <div className="lg:w-1/2 max-w-xl mx-auto lg:pr-4">
+                      <div className="max-w-xl mx-auto lg:w-1/2 lg:pr-4">
                         <HTMLContent
                           className="content"
                           content={slice.primary.text.html}
@@ -40,15 +41,21 @@ export default class SliceZone extends Component {
                     <MeetTheTeam />
                   </div>
                 )
+              case "google_reviews":
+                return (
+                  <div key={index}>
+                    <GoogleReviews />
+                  </div>
+                )
               case "classes_timetable":
                 return (
-                  <div className="p-4 container lg:p-12" key={index}>
+                  <div className="container p-4 lg:p-12" key={index}>
                     <ClassesTimetable />
                   </div>
                 )
               case "text_section":
                 return (
-                  <div className="p-8 container lg:p-12" key={index}>
+                  <div className="container p-8 lg:p-12" key={index}>
                     <HTMLContent
                       className="content"
                       content={slice.primary.rich_text.html}
@@ -57,7 +64,7 @@ export default class SliceZone extends Component {
                 )
               case "benefits":
                 return (
-                  <div key={index} className="gradient-orange--vertical text-white">
+                  <div key={index} className="text-white gradient-orange--vertical">
                     <div className="container p-8">
                       <Benefits showTitle={true} />
                     </div>
@@ -69,7 +76,7 @@ export default class SliceZone extends Component {
                 )
               case "prices":
                 return (
-                  <div key={index} className="p-8 container lg:p-12">
+                  <div key={index} className="container p-8 lg:p-12">
                     <Prices />
                   </div>
                 )
