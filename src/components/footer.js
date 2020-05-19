@@ -19,10 +19,9 @@ const Footer = () => {
   `)
   return (
     <>
-    {/* <Telephone className="fixed bottom-0 right-0 mb-2 mr-2 z-50 text-2xl text-white text-center pt-1 gradient-orange--vertical rounded-full w-50 h-50 lg:hidden" hideNumber={true} /> */}
-      <footer className="gradient-orange--vertical order-1 text-white p-10 pb-20 md:py-16 sm:min-w-400 md:order-first">
+      {/* <Telephone className="fixed bottom-0 right-0 z-50 pt-1 mb-2 mr-2 text-2xl text-center text-white rounded-full gradient-orange--vertical w-50 h-50 lg:hidden" hideNumber={true} /> */}
+      <footer className="order-1 p-10 pb-20 text-white gradient-orange--vertical md:py-16 sm:min-w-400 md:order-first">
         <div className="container">
-
           <Logo />
 
           <p className="mt-8 mb-4">
@@ -38,16 +37,28 @@ const Footer = () => {
             {getYear + " " + data.site.siteMetadata.title}
           </p>
 
-          <p><strong>Discounted Parking</strong></p>
-            <ul>
-              <li>Up to 60 mins - £1</li>
-              <li>90 mins - £1.50</li>
-              <li>2 hours - £2</li>
-              <li>3 hours - £3</li>
-            </ul>
+          <p>
+            <strong>Discounted Parking</strong>
+          </p>
+          <ul>
+            <li>Up to 60 mins - £1</li>
+            <li>90 mins - £1.50</li>
+            <li>2 hours - £2</li>
+            <li>3 hours - £3</li>
+          </ul>
+
+          <p className="mt-4">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-75"
+              href="https://www.zellement.com"
+            >
+              Web Design by Zellement
+            </a>
+          </p>
         </div>
       </footer>
-
     </>
   )
 }
