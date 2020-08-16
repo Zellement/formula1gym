@@ -67,7 +67,7 @@ const Prices = () => {
           </div>
         </div>
         <div className="p-3 pt-6 pb-3 -mt-4 rounded-lg md:w-2/3 gradient-dark-grey--vertical md:m-0 md:p-8 md:rounded-bl-none md:rounded-tl-none">
-          <Benefits hideStudent={true} showTitle={true} liClasses="w-full sm:w-1/2" />
+          <Benefits hideStudent={true} showTitle={true} />
         </div>
       </div>
 
@@ -102,25 +102,25 @@ const Prices = () => {
             Students can take advantage of the following benefits...
           </p>
           <ul className="flex flex-row flex-wrap">
-            <li className="w-full text-xs sm:text-sm md:text-base md:my-1">
+            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
               <FaRegCheckCircle className="inline mr-2" />8 minute walk from NTU city campus
             </li>
-            <li className="w-full text-xs sm:w-1/2 sm:text-sm md:text-base md:my-1">
+            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
               <FaRegCheckCircle className="inline mr-2" />No joining fee
             </li>
-            <li className="w-full text-xs sm:w-1/2 sm:text-sm md:text-base md:my-1">
+            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
               <FaRegCheckCircle className="inline mr-2" />Never over-crowded
             </li>
-            <li className="w-full text-xs sm:w-1/2 sm:text-sm md:text-base md:my-1">
+            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
               <FaRegCheckCircle className="inline mr-2" />Free body composition
             </li>
-            <li className="w-full text-xs sm:w-1/2 sm:text-sm md:text-base md:my-1">
+            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
               <FaRegCheckCircle className="inline mr-2" />Free personalised programme
             </li>
-            <li className="w-full text-xs sm:w-1/2 sm:text-sm md:text-base md:my-1">
+            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
               <FaRegCheckCircle className="inline mr-2" />Free classes
             </li>
-            <li className="w-full text-xs sm:w-1/2 sm:text-sm md:text-base md:my-1">
+            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
               <FaRegCheckCircle className="inline mr-2" />Large free weights area
             </li>
           </ul>
@@ -194,7 +194,7 @@ const Prices = () => {
         </div>
 
         <div className="p-3 text-white rounded-lg gradient-dark-grey--vertical md:m-0 md:p-8 lg:rounded-br-lg lg:rounded-tr-lg">
-          <Benefits showTitle={true} liClasses="w-full sm:w-1/2" />
+          <Benefits showTitle={true} />
         </div>
 
         <div className="flex justify-center block mt-6">
