@@ -14,9 +14,17 @@
 	background-image: linear-gradient(90deg, #FF9900 0%, #FF6700 100%);
 }
 
+.gradient-blue--vertical {
+	background-image: linear-gradient(180deg, #00A3FF 0%, #0077b7 100%);
+}
+
+.gradient-hotpink--vertical {
+	background-image: linear-gradient(180deg, #E8005A 0%, #C2004A 100%);
+}
+
 .gradient-dark-grey--vertical {
-background: rgb(34,34,34);
-background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(68,68,68,1) 100%);
+	background: rgb(34,34,34);
+	background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(68,68,68,1) 100%);
 }
 
 .logo {
@@ -42,7 +50,7 @@ background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(68,68,68,1) 100%);
 }
 
 .btn {
-	@apply rounded-full p-4 shadow transition-all transform duration-200 ease-in font-bold;
+	@apply p-4 font-bold transition-all duration-200 ease-in transform rounded-full shadow;
 	&-blue {
 		@apply bg-blue;
 		&:hover {
@@ -50,7 +58,7 @@ background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(68,68,68,1) 100%);
 		}
 	}
 	&-orange {
-		@apply bg-orange text-white;
+		@apply text-white bg-orange;
 		&:hover {
 			@apply bg-orange-semidark;
 		}
@@ -58,7 +66,7 @@ background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(68,68,68,1) 100%);
 	&-yellow {
 		@apply bg-yellow text-orange-semidark;
 		&:hover {
-			@apply bg-orange-semidark text-white;
+			@apply text-white bg-orange-semidark;
 		}
 	}
 }
@@ -96,7 +104,7 @@ background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(68,68,68,1) 100%);
 
 
 pre {
-	@apply whitespace-normal my-6 border-t border-b border-orange border-solid not-italic block py-4 font-display text-lg font-normal mx-4;
+	@apply block py-4 mx-4 my-6 text-lg not-italic font-normal whitespace-normal border-t border-b border-solid border-orange font-display;
 }
 
 

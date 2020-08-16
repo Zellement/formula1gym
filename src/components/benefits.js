@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { FaRegCheckCircle } from "react-icons/fa"
 
-const Benefits = ({ iconColour, showTitle, hideStudent }) => {
+const Benefits = ({ iconColour, showTitle, hideStudent, liClasses }) => {
   const data = useStaticQuery(graphql`
     query BenefitsQuery {
       allPrismicSiteSpecific {
@@ -28,7 +28,7 @@ const Benefits = ({ iconColour, showTitle, hideStudent }) => {
     <>
       {showTitle ? (
         <>
-          <p className="font-bold text-lg md:text-xl mb-4 lg:max-w-xs">
+          <p className="mb-4 text-lg font-bold md:text-xl lg:max-w-xs">
             {data.allPrismicSiteSpecific.edges[0].node.data.title.text}
           </p>
         </>
@@ -38,7 +38,7 @@ const Benefits = ({ iconColour, showTitle, hideStudent }) => {
           (benefitsData, index) => (
             <li
               key={index}
-              className="text-xs w-1/2 sm:text-sm md:text-base md:my-1"
+              className={"text-xs w-1/2 sm:text-sm md:text-base md:my-1 " + liClasses}
             >
               {benefitsData.benefit.text === "Student discount" &&
               hideStudent ? null : (

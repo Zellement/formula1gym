@@ -67,7 +67,11 @@ module.exports = {
         yellow: {
           default: '#FFC700',
           light: '#ffe07a'
-        }
+        },
+        hotpink: {
+          "500": '#E8005A',
+          "700": '#C2004A',
+        },
       },
     }
   },
@@ -75,3 +79,4 @@ module.exports = {
     container: false
   }
 }
+
