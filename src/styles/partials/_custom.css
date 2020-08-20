@@ -69,6 +69,12 @@
 			@apply text-white bg-orange-semidark;
 		}
 	}
+	&-hotpink-700 {
+		@apply bg-hotpink-700 text-white;
+		&:hover {
+			@apply text-white bg-hotpink-500;
+		}
+	}
 }
 
 .arrow-down {
