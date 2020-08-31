@@ -18,6 +18,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "302670434118205",
+      },
+    },
+    {
       resolve: "gatsby-plugin-preconnect",
       options: {
         domains: ["https://www.google-analytics.com"],
@@ -61,8 +67,8 @@ module.exports = {
       resolve: `gatsby-source-google-places`,
       options: {
         placeId: `ChIJdXtvmdXDeUgR877Bo28YMYU`,
-        apiKey: `${process.env.PLACES_KEY}`
-      }
+        apiKey: `${process.env.PLACES_KEY}`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
