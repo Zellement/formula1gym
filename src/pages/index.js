@@ -39,28 +39,28 @@ const IndexPage = ({ data }) => {
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div
-          className="gradient-orange--vertical-broken-dark shadow-lg"
+          className="shadow-lg gradient-orange--vertical-broken-dark"
           variants={item}
           transition="easeInOut"
         >
           <HeroIndex />
         </motion.div>
 
-        <motion.div
-          className="mb-2 p-8 text-center text-white bg-hotpink-500 shadow-lg"
+        {/* <motion.div
+          className="p-8 mb-2 text-center text-white shadow-lg bg-hotpink-500"
           variants={item}
           transition="easeInOut"
         >
 
             <p className="flex flex-col md:flex-row md:items-center md:justify-center">
-              <GiStarsStack className="inline mx-auto md:mx-0 text-5xl text-yellow" />
-              <span className="uppercase font-bold text-lg m-0 leading-tight">Student Offer</span>
+              <GiStarsStack className="inline mx-auto text-5xl md:mx-0 text-yellow" />
+              <span className="m-0 text-lg font-bold leading-tight uppercase">Student Offer</span>
               <span className="mx-2 my-0 leading-tight">£100 until July 2021!</span>
-              <span className="mx-4 text-sm opacity-75 m-0 leading-tight">Available until end October</span>
-              <Link className="mt-2 btn btn-hotpink-700 self-center md:m-0 md:ml-4" to="/prices">Find out more</Link>
+              <span className="m-0 mx-4 text-sm leading-tight opacity-75">Available until end October</span>
+              <Link className="self-center mt-2 btn btn-hotpink-700 md:m-0 md:ml-4" to="/prices">Find out more</Link>
             </p> 
 
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="container"
