@@ -131,9 +131,9 @@ const Prices = () => {
         </div>
       </div> */}
 
-      <div className="flex justify-center block mt-6 mb-8">
+      {/* <div className="flex justify-center block mt-6 mb-8">
         <JoinNow />
-      </div>
+      </div> */}
 
       <div className="">
         <h2 className="block mb-4 text-2xl text-center">Upfront Memberships</h2>
