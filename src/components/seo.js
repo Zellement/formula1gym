@@ -12,6 +12,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
         }
         file(relativePath: { eq: "ogimage.jpg" }) {
