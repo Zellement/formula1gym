@@ -20,6 +20,7 @@
     "gatsby-plugin-preconnect": "^1.0.5",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-sitemap": "^2.9.0",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-source-google-places": "0.0.5",
     "gatsby-source-prismic": "^3.0.0",

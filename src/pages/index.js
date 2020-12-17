@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Link } from "gatsby"
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
 import HowItWorks from "../components/how-it-works"
@@ -8,7 +7,6 @@ import HeroIndex from "../components/hero-index"
 import ReadyToBegin from "../components/ready-to-begin"
 import GalleryCarousel from "../components/gallery-carousel"
 import { HTMLContent } from "../components/content"
-import { GiStarsStack } from "react-icons/gi"
 
 const duration = 0.35
 

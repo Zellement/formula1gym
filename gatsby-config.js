@@ -23,6 +23,7 @@ module.exports = {
         pixelId: "302670434118205",
       },
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-preconnect",
       options: {
