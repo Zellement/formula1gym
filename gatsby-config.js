@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Formula One Gym`,
-    description: `No joining fee or contract, just £19pm. Student discount also available. See our website for what it includes!`,
+    description: `No Joining Fee or Contract, Just £19 per month. Free Weights, 60+ Resistance Machines, 40+ Cardio Machines and Classes. See our website to find out more!`,
     author: `@Zellement`,
   },
   plugins: [
