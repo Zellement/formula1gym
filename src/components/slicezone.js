@@ -28,7 +28,6 @@ export default class SliceZone extends Component {
                           content={slice.primary.text.html}
                         />
                       </div>
-
                       <div className="lg:w-1/2 lg:pl-4">
                         <GalleryCarousel images={slice.items} />
                       </div>

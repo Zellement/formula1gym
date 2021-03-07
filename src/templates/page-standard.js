@@ -111,6 +111,7 @@ export const query = graphql`
             slice_type
             items {
               image {
+                alt
                 fluid(maxHeight:825) {
                     ...GatsbyPrismicImageFluid
                 }

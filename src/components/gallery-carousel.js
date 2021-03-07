@@ -63,22 +63,22 @@ class GalleryCarousel extends Component {
                 }}
                 className="embla-viewport"
               >
-                <div className="embla__container max-w-full">
+                <div className="max-w-full embla__container">
                   {this.state.images.map((image, index) =>
                     <motion.div
                       key={index}
                       variants={item}
                       transition="easeInOut"
-                      className="embla__slide embla__slide--gallery block"
+                      className="block embla__slide embla__slide--gallery"
                     >
                       <Img
                         backgroundColor="#26486E"
                         fluid={image.image.fluid}
                         key={image.title}
-                        alt={image.alt}
-                        className="w-full block"
+                        alt={image.image.alt}
+                        className="block w-full"
                       />
-                      <span className="text-sm bg-white p-1 text-black absolute bottom-0 right-0 z-20">{('0' + (index + 1)).slice(-2)}</span>
+                      <span className="absolute bottom-0 right-0 z-20 p-1 text-sm text-black bg-white">{('0' + (index + 1)).slice(-2)}</span>
                     </motion.div>
                   )}
                 </div>
@@ -86,7 +86,7 @@ class GalleryCarousel extends Component {
               <motion.button
                 variants={item}
                 transition="easeInOut"
-                className="transition duration-100 ease-in absolute cursor-pointer mt-1 mr-1 top-0 left-0 p-1 font-bold text-2xl text-white font-serif appearance-none focus:outline-none z-10 hover:text-blue"
+                className="absolute top-0 left-0 z-10 p-1 mt-1 mr-1 font-serif text-2xl font-bold text-white transition duration-100 ease-in appearance-none cursor-pointer focus:outline-none hover:text-blue"
                 onClick={() => this.embla.scrollPrev()}
                 aria-label="Previous image"
               >
@@ -95,7 +95,7 @@ class GalleryCarousel extends Component {
               <motion.button
                 variants={item}
                 transition="easeInOut"
-                className="transition duration-100 ease-in absolute cursor-pointer mt-1 mr-1 top-0 right-0 2xl:-mr-6 font-bold text-white text-2xl appearance-none focus:outline-none z-10 hover:text-blue"
+                className="absolute top-0 right-0 z-10 mt-1 mr-1 text-2xl font-bold text-white transition duration-100 ease-in appearance-none cursor-pointer 2xl:-mr-6 focus:outline-none hover:text-blue"
                 onClick={() => this.embla.scrollNext()}
                 aria-label="Next image"
               >
