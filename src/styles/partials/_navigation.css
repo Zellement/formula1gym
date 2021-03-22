@@ -3,10 +3,10 @@ Navigation
 -------------------------- */
 
 .navigation-wrapper {
-	@apply bg-orange fixed transition-all duration-100 ease-in top-0 left-0 p-6 z-10 w-full h-screen;
+	@apply fixed top-0 left-0 z-10 w-full h-screen p-6 transition-all duration-100 ease-in bg-orange;
 	transform: translateX(-200%);
 	@screen lg {
-		@apply bg-transparent h-auto left-auto block static top-auto p-0 w-full top-auto;
+		@apply static top-auto left-auto block w-full h-auto p-0 bg-transparent;
 		transform: translateX(0);
 	}
 }
@@ -22,18 +22,18 @@ Navigation
 
 .navigation-button {
 	padding: 15px;
-	@apply bg-white fixed top-0 rounded-bl right-0 w-12 h-12 block z-10 cursor-pointer;
+	@apply fixed top-0 right-0 z-10 block w-12 h-12 bg-white rounded-bl cursor-pointer;
 	@screen lg {
 		@apply hidden;
 	}
 }
 
 .navigation-button__inside {
-	@apply relative w-full h-full z-50;
+	@apply relative z-50 w-full h-full;
 }
 
 .navigation-button__lines {
-	@apply block absolute top-0 w-1/2 opacity-100 bg-orange transform transition-all duration-100 ease-in;
+	@apply absolute top-0 block w-1/2 transition-all duration-100 ease-in transform opacity-100 bg-orange;
 	height: 2px;
 }
 
@@ -42,30 +42,30 @@ Navigation
 }
 
 .navigation-button.is-active .navigation-button__line-1 {
-	@apply transform rotate-45 left-0 bg-orange;
+	@apply left-0 transform rotate-45 bg-orange;
 	margin-top: 2px;
 }
 
 .navigation-button.is-active .navigation-button__line-2 {
-	@apply transform -rotate-45 left-0 bg-orange;
+	@apply left-0 transform -rotate-45 bg-orange;
 	margin-top: 10px;
 }
 
 .navigation-button.is-active .navigation-button__line-3 {
-	@apply hidden left-0 mt-4;
+	@apply left-0 hidden mt-4;
 }
 
 .navigation-button.is-active .navigation-button__line-4 {
-	@apply hidden right-0;
+	@apply right-0 hidden;
 }
 
 .navigation-button.is-active .navigation-button__line-5 {
-	@apply transform -rotate-45 right-0 bg-orange;
+	@apply right-0 transform -rotate-45 bg-orange;
 	margin-top: 2px;
 }
 
 .navigation-button.is-active .navigation-button__line-6 {
-	@apply transform rotate-45 right-0 bg-orange;
+	@apply right-0 transform rotate-45 bg-orange;
 	margin-top: 10px;
 }
 
@@ -74,11 +74,17 @@ Navigation
 }
 
 .navigation-wrapper__link {
-	@apply text-white font-bold block py-1 px-1 my-auto ;
+	@apply block px-1 py-1 my-auto font-bold text-white ;
 	@screen lg {
 		@apply tracking-tight;
 	}
 	@screen xl {
 		@apply px-4 tracking-normal;
+	}
+	&:hover {
+		@apply underline;
+	}
+	&:focus {
+		@apply underline;
 	}
 }

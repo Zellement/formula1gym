@@ -5,13 +5,13 @@ import EmblaCarouselReact from 'embla-carousel-react'
 import { motion } from 'framer-motion'
 import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from 'react-icons/io'
 
-const duration = 0.75
+const duration = 0.1
 
 const container = {
   visible: {
     transition: {
       when: 'beforeChildren',
-      staggerChildren: 0.25,
+      staggerChildren: 0.05,
       delayChildren: duration,
     },
   },
