@@ -7,6 +7,14 @@ const HeroIndex = () => {
   return (
     <div className="container p-4 text-white lg:flex lg:flex-wrap lg:px-16">
 
+			<div className="w-full p-2 mb-8 text-center rounded-lg bg-orange-semidark">
+
+				<p className="text-lg font-bold text-yellow-light">FREE Day Passes for all new members.</p>
+				<p>Sign up using our induction form below and when we book you in, simply mention the free day pass!</p>
+				<p className="text-sm">Offer expires end of April</p>
+
+			</div>
+
 		<div className="lg:w-1/2">
 
 			{/* <p className="text-xl font-bold tracking-tight text-center text-orange-semidark md:text-2xl md:tracking-normal lg:text-left">Nottingham's favourite gym</p> */}
