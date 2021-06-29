@@ -18,12 +18,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-facebook-pixel`,
-    //   options: {
-    //     pixelId: "302670434118205",
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "302670434118205",
+      },
+    },
     `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-preconnect",
