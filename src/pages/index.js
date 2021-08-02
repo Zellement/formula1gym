@@ -55,8 +55,7 @@ const IndexPage = ({ data }) => {
               <GiStarsStack className="inline mx-auto text-5xl md:mx-0 text-yellow" />
               <span className="m-0 text-lg font-bold leading-tight uppercase">August Offer</span>
               <span className="mx-2 my-0 leading-tight">FREE gym session!</span>
-              <span className="m-0 mx-4 text-sm leading-tight opacity-75">Available until 10 August 2021</span>
-              <Link className="self-center mt-2 btn btn-hotpink-700 md:m-0 md:ml-4" to="/prices">Find out more</Link>
+              <span className="m-0 mx-4 text-sm leading-tight opacity-75">Available until 10 August 2021. Fill out the form below.</span>
             </p> 
 
         </motion.div>
