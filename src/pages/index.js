@@ -53,10 +53,12 @@ const IndexPage = ({ data }) => {
 
             <p className="flex flex-col md:flex-row md:items-center md:justify-center">
               <GiStarsStack className="inline mx-auto text-5xl md:mx-0 text-yellow" />
-              <span className="m-0 text-lg font-bold leading-tight uppercase">August Offer</span>
-              <span className="mx-2 my-0 leading-tight">FREE gym session!</span>
-              <span className="m-0 mx-4 text-sm leading-tight opacity-75">Available until 10 August 2021. Fill out the form below.</span>
+              <span className="m-0 text-lg font-bold leading-tight uppercase">Student Offer</span>
+              <span className="mx-2 my-0 leading-tight">£100 until July 2022!</span>
+              <span className="m-0 mx-4 text-sm leading-tight opacity-75">Available until end of October.</span>
             </p> 
+
+			      <Link className="btn inline-block btn-hotpink-700 mt-4" to="/prices/">Find Out More</Link>
 
         </motion.div>
 

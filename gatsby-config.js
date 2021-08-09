@@ -7,7 +7,7 @@ module.exports = {
     title: `Formula One Gym`,
     description: `No Joining Fee or Contract, Just £19 per month. Free Weights, 60+ Resistance Machines, 40+ Cardio Machines and Classes. See our website to find out more!`,
     author: `@Zellement`,
-    siteUrl: "https://www.formulaonegym.co.uk"
+    siteUrl: "https://www.formulaonegym.co.uk",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +24,12 @@ module.exports = {
         pixelId: "302670434118205",
       },
     },
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        excludes: `free-day-pass`,
+      },
+    },
     {
       resolve: "gatsby-plugin-preconnect",
       options: {

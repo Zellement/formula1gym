@@ -84,7 +84,7 @@ export default class Contact extends React.Component {
                {this.validator.message('name', this.state.telephone, 'required')}
               </label>
               <span className="w-full p-1 xl:w-1/2">
-                <button className="w-full p-0 btn btn-yellow text-orange-semidark" type="submit"><span className="block p-4 whitespace-no-wrap">Book induction</span></button>
+                <button className="w-full p-0 btn btn-yellow text-orange-semidark" type="submit"><span className="block p-4 whitespace-no-wrap">{ this.props.btnName ? this.props.btnName : "Book Induction"}</span></button>
               </span>
             </div>
         </form>
