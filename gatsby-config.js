@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        excludes: `free-day-pass`,
+        excludes: [`free-day-pass`],
       },
     },
     {
