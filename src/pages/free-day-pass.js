@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/seo"
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 import { motion } from "framer-motion"
 import Hero from "../components/hero"
 import QuickContactForm from "../components/quick-contact-form"
@@ -26,9 +26,9 @@ const item = {
 const FreeDayPassPage = () => {
   return (
     <>
-      <SEO
-        title="Formula One Gym | Free Day Pass!"
-        description="Free day pass!"
+      <GatsbySeo
+        title="Free Day Pass | Formula One Gym"
+        noindex={true}
       />
 
       <motion.section variants={container} initial="hidden" animate="visible">

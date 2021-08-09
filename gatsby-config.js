@@ -36,6 +36,7 @@ module.exports = {
         domains: ["https://www.google-analytics.com"],
       },
     },
+    'gatsby-plugin-next-seo',
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
