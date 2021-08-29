@@ -86,7 +86,7 @@ const Prices = () => {
               100
             </span>
             <span className="block m-0 text-3xl font-bold leading-tight lg:text-3xl text-shadow-lg">
-              Until July 2021*
+              Until July 2022*
             </span>
           </span>
           <span className="block mt-8 leading-tight opacity-75">
