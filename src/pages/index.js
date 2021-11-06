@@ -45,7 +45,7 @@ const IndexPage = ({ data }) => {
           <HeroIndex />
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className="p-8 mb-2 text-center text-white shadow-lg bg-hotpink-500"
           variants={item}
           transition="easeInOut"
@@ -58,9 +58,9 @@ const IndexPage = ({ data }) => {
               <span className="m-0 mx-4 text-sm leading-tight opacity-75">Available until end of October.</span>
             </p> 
 
-			      <Link className="btn inline-block btn-hotpink-700 mt-4" to="/prices/">Find Out More</Link>
+			      <Link className="inline-block mt-4 btn btn-hotpink-700" to="/prices/">Find Out More</Link>
 
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="container"
