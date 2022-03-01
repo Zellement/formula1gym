@@ -33,8 +33,8 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <SEO
-        title="Formula One Gym | Nottingham City Centre"
-        description="No Joining Fee or Contract, Just £19 per month. Free Weights, 60+ Resistance Machines, 40+ Cardio Machines and Classes. See our website to find out more!" />
+        title="Gym Nottingham City Centre | Gym Near Me Nottingham - Formula One Gym"
+        description="Conveniently located in Nottingham city centre, Formula One Gym is all you need from the gym near you. No joining fee, get in touch today!" />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div

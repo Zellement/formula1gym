@@ -46,7 +46,7 @@ const FindUsPage = () => {
   `)
   return (
     <>
-      <SEO title="Find Us | Formula One Gym" />
+      <SEO title="Contact Us - Formula One Gym" description="Get in touch today with Formula One Gym to learn more about our facilities and classes at our Nottingham city centre based gym." />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div
@@ -63,7 +63,7 @@ const FindUsPage = () => {
         </motion.div>
 
         <motion.div
-          className="relative p-8 container content"
+          className="container relative p-8 content"
           variants={item}
           transition="easeInOut"
         >

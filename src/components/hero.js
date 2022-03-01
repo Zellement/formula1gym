@@ -22,7 +22,7 @@ const Hero = ({pageTitle, pageIntro, showStars}) => {
           variants={item}
           transition="easeInOut">{pageTitle}</motion.p>
         <motion.p
-          className="max-w-sm m-0 font-bold text-orange-semidark"
+          className="max-w-sm m-0 font-bold md:my-auto text-orange-semidark"
           variants={item}
         transition="easeInOut">{pageIntro}</motion.p>
         </div>

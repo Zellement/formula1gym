@@ -3,9 +3,9 @@ Navigation
 -------------------------- */
 
 .navigation-wrapper {
-	@apply fixed top-0 left-0 z-10 w-full h-screen p-6 transition-all duration-100 ease-in bg-orange;
+	@apply fixed top-0 left-0 z-30 w-full h-screen p-6 transition-all duration-100 ease-in bg-orange;
 	transform: translateX(-200%);
-	@screen lg {
+	@screen xl {
 		@apply static top-auto left-auto block w-full h-auto p-0 bg-transparent;
 		transform: translateX(0);
 	}
@@ -23,7 +23,7 @@ Navigation
 .navigation-button {
 	padding: 15px;
 	@apply fixed top-0 right-0 z-10 block w-12 h-12 bg-white rounded-bl cursor-pointer;
-	@screen lg {
+	@screen xl {
 		@apply hidden;
 	}
 }
@@ -74,12 +74,12 @@ Navigation
 }
 
 .navigation-wrapper__link {
-	@apply block px-1 py-1 my-auto font-bold text-white ;
+	@apply flex flex-1 px-1 py-1 my-auto font-bold text-center text-white;
 	@screen lg {
 		@apply tracking-tight;
 	}
 	@screen xl {
-		@apply px-4 tracking-normal;
+		@apply px-2 text-sm tracking-normal;
 	}
 	&:hover {
 		@apply underline;

@@ -6,7 +6,7 @@ import Phone from "./contact-options/telephone"
 
 const Header = () => (
   <>
-    <header className="p-6 lg:pb-12 l:pt-6">
+    <header className="p-6 xl:pb-12 l:pt-6">
       <div className="container lg:flex lg:space-between">
         <div className="flex flex-wrap items-center">
           <Link aria-label="Go to the homepage" name="Go to the homepage" to="/">
@@ -14,7 +14,7 @@ const Header = () => (
           </Link>
         </div>
         <div className="flex flex-col items-end ml-auto">
-          <div className="hidden lg:block text-white mb-2"><Phone /></div>
+          <div className="hidden mb-2 text-white xl:block"><Phone /></div>
           <Nav />
         </div>
       </div>

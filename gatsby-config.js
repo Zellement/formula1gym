@@ -36,8 +36,14 @@ module.exports = {
         domains: ["https://www.google-analytics.com"],
       },
     },
-    'gatsby-plugin-next-seo',
+    "gatsby-plugin-next-seo",
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.formulaonegym.co.uk`,
+      },
+    },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
