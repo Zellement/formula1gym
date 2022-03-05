@@ -26,6 +26,7 @@ const item = {
 }
 
 const IndexPage = ({ data }) => {
+
   const post = data.prismicPage
 
   return (

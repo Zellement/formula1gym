@@ -115,6 +115,7 @@ function SEO({ description, lang, meta, title }) {
           {JSON.stringify(schemaOrgWebPage)}
         </script>
       }
+      <meta name="google-site-verification" content="vLX2rcNn-8W_ohMkF-Sz0cm3b55ElLDGertMCruaQnk" />
       {/* {article && <script type="application/ld+json">{JSON.stringify(schemaArticle)}</script>}
         <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script> */}
     </Helmet>
