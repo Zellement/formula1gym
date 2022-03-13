@@ -33,8 +33,8 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <SEO
-        title="Gym Nottingham City Centre | Gym Near Me Nottingham - Formula One Gym"
-        description="Conveniently located in Nottingham city centre, Formula One Gym is all you need from the gym near you. No joining fee, get in touch today!" />
+        title="Formula One Gym l Nottingham City Centre"
+        description="No joining fee or contract, just £19pm. Free weights, resistance machines, cardio machines, classes, saunas and sunbeds. See our website to find out more!" />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div
