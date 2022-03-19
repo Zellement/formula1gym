@@ -33,8 +33,8 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <SEO
-        title="Formula One Gym l Nottingham City Centre"
-        description="No joining fee or contract, just £19pm. Free weights, resistance machines, cardio machines, classes, saunas and sunbeds. See our website to find out more!" />
+        title="Gym Nottingham City Centre | Formula One Gym"
+        description="No joining fee or contract, just £19pm. Our independant Nottingham gym offers free weights, resistance machines, cardio machines, classes, saunas and sunbeds. See our website to find out more!" />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div
