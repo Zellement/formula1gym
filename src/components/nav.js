@@ -23,28 +23,28 @@ const Nav = class extends React.Component {
             <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/">Home</Link>
           </li>
           <li className="navigation-wrapper__list-item">
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/about">About</Link>
+            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/about/">About</Link>
           </li>
           <li className="navigation-wrapper__list-item">
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/mixed-gym">Mixed Gym</Link>
+            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/mixed-gym/">Mixed Gym</Link>
           </li>
           <li className="navigation-wrapper__list-item">
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/women-only-gym">Women-Only Gym</Link>
+            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/women-only-gym/">Women-Only Gym</Link>
           </li>
           <li className="navigation-wrapper__list-item">
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/sunbeds">Sunbeds</Link>
+            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/sunbeds/">Sunbeds</Link>
           </li>
           <li className="navigation-wrapper__list-item">
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/sports-massage">Sports Massage</Link>
+            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/sports-massage/">Sports Massage</Link>
           </li>
           <li className="navigation-wrapper__list-item">
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/prices">Prices</Link>
+            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/prices/">Prices</Link>
           </li>
           <li className="navigation-wrapper__list-item">
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/classes">Classes</Link>
+            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/classes/">Classes</Link>
           </li>
           <li className="navigation-wrapper__list-item">
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/contact-find-us">Contact / Find Us</Link>
+            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/contact-find-us/">Contact / Find Us</Link>
           </li>
           <li className="mt-4 navigation-wrapper__list-item xl:mt-0 xl:pl-4">
             <JoinNow />

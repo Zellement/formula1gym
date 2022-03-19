@@ -13,7 +13,7 @@ exports.createPages = async function({ actions, graphql }) {
   `)
   data.allPrismicPage.edges.forEach(edge => {
     actions.createPage({
-      path: edge.node.uid,
+      path: edge.node.uid + '/',
       component: require.resolve(`./src/templates/page-standard.js`),
       context: { slug: edge.node.uid },
     })
