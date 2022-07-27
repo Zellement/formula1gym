@@ -165,7 +165,7 @@ const Prices = () => {
             )}
           </div>
         </div>
-        <div className="p-8 my-4 bg-gray-100 rounded-lg">
+        {/* <div className="p-8 my-4 bg-gray-100 rounded-lg">
           <h3 className="block m-0 text-xl text-center">Student Prices</h3>
           <p className="block mb-4 text-center">
             Choose an amount of time and pay upfront for your membership - just
@@ -191,7 +191,7 @@ const Prices = () => {
               )
             )}
           </div>
-        </div>
+        </div> */}
 
         <div className="p-3 text-white rounded-lg gradient-dark-grey--vertical md:m-0 md:p-8 lg:rounded-br-lg lg:rounded-tr-lg">
           <Benefits showTitle={true} />
@@ -202,7 +202,7 @@ const Prices = () => {
         </div>
 
         <div className="container flex flex-col max-w-5xl mt-8 mb-4 text-white md:flex-row">
-          <div className="relative flex flex-col w-5/6 p-4 mx-auto mb-4 text-center text-white rounded-lg shadow-xl gradient-orange--vertical md:mb-0 md:rounded-none md:justify-center md:rounded-bl-lg md:rounded-tl-lg">
+          {/* <div className="relative flex flex-col w-5/6 p-4 mx-auto mb-4 text-center text-white rounded-lg shadow-xl gradient-orange--vertical md:mb-0 md:rounded-none md:justify-center md:rounded-bl-lg md:rounded-tl-lg">
             <span className="block leading-tight">Couples Membership</span>
             <span className="">
               <span className="-mt-4 text-xl">£</span>
@@ -220,9 +220,9 @@ const Prices = () => {
             <span className="block mt-2 text-xs leading-tight">
               Two cards means flexibility for yourself.
             </span>
-          </div>
+          </div> */}
 
-          <div className="relative flex flex-col w-5/6 p-4 mx-auto text-center text-white rounded-lg shadow-xl gradient-dark-grey--vertical md:rounded-none md:justify-center md:rounded-br-lg md:rounded-tr-lg">
+          <div className="relative flex flex-col w-5/6 p-4 mx-auto text-center text-white rounded-lg shadow-xl gradient-dark-grey--vertical md:justify-center">
             <span className="block leading-tight">Corporate Membership</span>
             <span className="">
               <span className="-mt-4 text-xl">£</span>
