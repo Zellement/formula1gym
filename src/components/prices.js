@@ -79,14 +79,14 @@ const Prices = () => {
 
       <div className="container flex flex-col max-w-5xl mb-10 text-white md:flex-row">
         <div className="relative flex flex-col w-5/6 p-4 mx-auto text-center text-white rounded-lg shadow-xl gradient-hotpink--vertical md:rounded-br-none md:justify-center md:rounded-tr-none md:w-1/3">
-          <span className="block leading-tight">Student Special</span>
+          <span className="block leading-tight">Student<br />Term Time Special</span>
           <span className="">
             <span className="-mt-4 text-2xl">£</span>
             <span className="m-0 font-bold leading-none text-white text-7xl lg:text-9xl text-shadow-lg">
               120
             </span>
             <span className="block m-0 text-3xl font-bold leading-tight lg:text-3xl text-shadow-lg">
-              Until October 2022*
+              Until July 2023*
             </span>
           </span>
           <span className="block mt-8 leading-tight opacity-75">
