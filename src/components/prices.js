@@ -77,20 +77,20 @@ const Prices = () => {
 
       {/* Student offer */}
 
-      {/* <div className="container flex flex-col max-w-5xl mb-10 text-white md:flex-row">
+      <div className="container flex flex-col max-w-5xl mb-10 text-white md:flex-row">
         <div className="relative flex flex-col w-5/6 p-4 mx-auto text-center text-white rounded-lg shadow-xl gradient-hotpink--vertical md:rounded-br-none md:justify-center md:rounded-tr-none md:w-1/3">
-          <span className="block leading-tight">Student<br />Term-Time Special</span>
+          <span className="block leading-tight">Student Special</span>
           <span className="">
             <span className="-mt-4 text-2xl">£</span>
             <span className="m-0 font-bold leading-none text-white text-7xl lg:text-9xl text-shadow-lg">
-              100
+              120
             </span>
             <span className="block m-0 text-3xl font-bold leading-tight lg:text-3xl text-shadow-lg">
-              Until July 2022*
+              Until October 2022*
             </span>
           </span>
           <span className="block mt-8 leading-tight opacity-75">
-            That works out at around £10 a month!**
+            That works out at around £12 a month!**
           </span>
           <div className="absolute top-0 right-0 flex flex-col justify-center p-1 -mt-4 -mr-12 bg-gray-200 rounded-lg shadow max-w-90 sm:-mr-2 md:left-0 md:right-inherit lg:-ml-4 md:ml-2 md:mr-0 md:-mt-12 lg:-mt-4">
             <GiStarsStack className="block mx-auto text-4xl text-yellow" />
@@ -129,11 +129,11 @@ const Prices = () => {
             **Dependent on when you join
           </p>
         </div>
-      </div> */}
+      </div> 
 
-      {/* <div className="flex justify-center block mt-6 mb-8">
+      <div className="flex justify-center block mt-6 mb-8">
         <JoinNow />
-      </div> */}
+      </div> 
 
       <div className="">
         <h2 className="block mb-4 text-2xl text-center">Upfront Memberships</h2>

@@ -45,7 +45,7 @@ const IndexPage = ({ data }) => {
           <HeroIndex />
         </motion.div>
 
-        {/* <motion.div
+        <motion.div
           className="p-8 mb-2 text-center text-white shadow-lg bg-hotpink-500"
           variants={item}
           transition="easeInOut"
@@ -54,13 +54,13 @@ const IndexPage = ({ data }) => {
             <p className="flex flex-col md:flex-row md:items-center md:justify-center">
               <GiStarsStack className="inline mx-auto text-5xl md:mx-0 text-yellow" />
               <span className="m-0 text-lg font-bold leading-tight uppercase">Student Offer</span>
-              <span className="mx-2 my-0 leading-tight">£100 until July 2022!</span>
+              <span className="mx-2 my-0 leading-tight">£120 until October 2022!</span>
               <span className="m-0 mx-4 text-sm leading-tight opacity-75">Available until end of October.</span>
             </p> 
 
 			      <Link className="inline-block mt-4 btn btn-hotpink-700" to="/prices/">Find Out More</Link>
 
-        </motion.div> */}
+        </motion.div>
 
         <motion.div
           className="container"
