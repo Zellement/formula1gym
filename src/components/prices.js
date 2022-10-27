@@ -77,7 +77,7 @@ const Prices = () => {
 
       {/* Student offer */}
 
-      <div className="container flex flex-col max-w-5xl mb-10 text-white md:flex-row">
+      {/* <div className="container flex flex-col max-w-5xl mb-10 text-white md:flex-row">
         <div className="relative flex flex-col w-5/6 p-4 mx-auto text-center text-white rounded-lg shadow-xl gradient-hotpink--vertical md:rounded-br-none md:justify-center md:rounded-tr-none md:w-1/3">
           <span className="block leading-tight">Student<br />Term Time Special</span>
           <span className="">
@@ -129,7 +129,7 @@ const Prices = () => {
             **Dependent on when you join
           </p>
         </div>
-      </div> 
+      </div>  */}
 
       <div className="flex justify-center block mt-6 mb-8">
         <JoinNow />
