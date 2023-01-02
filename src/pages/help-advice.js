@@ -35,6 +35,8 @@ const HelpAdvicePage = ({ data }) => {
         description="No joining fee or contract, just £22pm. Our independant Nottingham gym offers free weights, resistance machines, cardio machines, classes, saunas and sunbeds. See our website to find out more!"
       />
 
+      <h1 className="sr-only">Help &amp; Advice Centre</h1>
+
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div
           className="shadow-lg gradient-orange--vertical-broken-dark"
@@ -46,13 +48,18 @@ const HelpAdvicePage = ({ data }) => {
             pageIntro={"Read some of our useful opinions and tips"}
           />
         </motion.div>
-        <motion.section variants={container} initial="hidden" animate="visible">
-          <ul className="container grid-flow-col grid-cols-1 gap-8 px-8 py-16 md:grid-cols-2 xl:grid-cols-3">
+        <motion.section
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="container"
+        >
+          <ul className="grid grid-cols-1 gap-8 px-8 py-16 md:grid-cols-2 xl:grid-cols-3">
             {post.map((edge) => {
               return (
                 <li key={edge.node.id}>
                   <Link
-                    className="flex flex-col gap-8 p-8 border-t-2 shadow-xl border-orange"
+                    className="flex flex-col gap-8 p-8 transition-all duration-300 border-t-2 shadow-lg hover:border-blue border-orange hover:shadow-xl"
                     to={`/help-advice/${edge.node.uid}/`}
                   >
                     <Img
@@ -88,7 +95,7 @@ export const query = graphql`
         node {
           uid
           id
-          first_publication_date(formatString: "DD MM YYYY")
+          first_publication_date(formatString: "DD/MM/YYYY")
           data {
             page_title {
               text

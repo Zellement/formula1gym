@@ -1,7 +1,6 @@
 module.exports = {
   purge: {
-    content: ["./src/**/*.js", "./src/**/*.css"],
-    safelist: ["md:order-1", "md:order-0"],
+    content: ["./src/**/*.js", "./src/**/*.css", "./safelist.txt"],
   },
   theme: {
     minHeight: {

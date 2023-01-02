@@ -17,7 +17,7 @@ const Nav = class extends React.Component {
     return (
       <nav className="xl:flex xl:content-end xl:justify-end xl:flex-col xl:ml-auto">
         <div className={`navigation-wrapper navigation-wrapper--${menuActive}`}>
-          <ul className="xl:flex xl:w-full xl:flex-row xl:justify-start xl:items-stretch">
+          <ul className=" xl:flex xl:w-full xl:flex-row xl:justify-start xl:items-stretch">
             <li className="navigation-wrapper__list-item">
               <Link
                 className="navigation-wrapper__link"
@@ -119,7 +119,7 @@ const Nav = class extends React.Component {
               </Link>
             </li>
             <li className="mt-4 navigation-wrapper__list-item xl:mt-0 xl:pl-4">
-              <JoinNow />
+              <JoinNow className="self-start" />
             </li>
           </ul>
         </div>
