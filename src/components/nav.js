@@ -104,6 +104,7 @@ const Nav = class extends React.Component {
                 onClick={this.toggleMenu}
                 activeClassName="is-active"
                 to="/help-advice/"
+                partiallyActive
               >
                 Help &amp; <span>Advice</span>
               </Link>
