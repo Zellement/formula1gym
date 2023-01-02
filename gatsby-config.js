@@ -72,6 +72,7 @@ module.exports = {
           classes_timetable: require("./src/schemas/classes_timetable.json"),
           homepage: require("./src/schemas/homepage.json"),
           meet_the_team: require("./src/schemas/meet_the_team.json"),
+          help__advice: require("./src/schemas/help__advice.json"),
           page: require("./src/schemas/page.json"),
           site_specific: require("./src/schemas/site_specific.json"),
         },

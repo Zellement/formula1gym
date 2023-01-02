@@ -1,0 +1,248 @@
+{
+  "Main" : {
+    "page_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "Page Title"
+      }
+    },
+    "page_intro" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "allowTargetBlank" : true,
+        "label" : "Page Intro"
+      }
+    },
+    "page_content" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : {
+          "text_section" : [ {
+            "name" : "1col",
+            "display" : "1 Column"
+          }, {
+            "name" : "2col",
+            "display" : "2 Columns"
+          } ],
+          "image___text" : [ {
+            "name" : "order-0",
+            "display" : "order-0"
+          }, {
+            "name" : "order-1",
+            "display" : "order-1"
+          } ],
+          "text___gallery" : [ {
+            "name" : "order-0",
+            "display" : "order-0"
+          }, {
+            "name" : "order-1",
+            "display" : "order-1"
+          } ],
+          "prices" : [ ],
+          "content_relationship" : [ ],
+          "meet_the_team" : [ ],
+          "classes_timetable" : [ ],
+          "facilities" : [ ],
+          "benefits" : [ ],
+          "google_reviews" : [ ]
+        },
+        "choices" : {
+          "text_section" : {
+            "type" : "Slice",
+            "fieldset" : "Text Section",
+            "description" : "Simple text section with either one or two columns",
+            "icon" : "text_fields",
+            "non-repeat" : {
+              "rich_text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "label" : "Rich Text",
+                  "placeholder" : "Text..."
+                }
+              },
+              "classes" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label" : "Classes"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "full_width_image" : {
+            "type" : "Slice",
+            "fieldset" : "Full Width Image",
+            "description" : "A wide, thin image",
+            "icon" : "broken_image",
+            "non-repeat" : {
+              "image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : {
+                    "width" : 980,
+                    "height" : 300
+                  },
+                  "thumbnails" : [ ],
+                  "label" : "Image"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "image___text" : {
+            "type" : "Slice",
+            "fieldset" : "Image & Text",
+            "description" : "Side-by-side text and image",
+            "icon" : "airplay",
+            "display" : "grid",
+            "non-repeat" : {
+              "text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank" : true,
+                  "label" : "Text"
+                }
+              },
+              "image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Image"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "text___gallery" : {
+            "type" : "Slice",
+            "fieldset" : "Text & Gallery",
+            "description" : "Side-by-side text and gallery",
+            "icon" : "settings_system_daydream",
+            "display" : "grid",
+            "non-repeat" : {
+              "text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank" : true,
+                  "label" : "Text"
+                }
+              }
+            },
+            "repeat" : {
+              "image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : {
+                    "width" : 1000,
+                    "height" : 825
+                  },
+                  "thumbnails" : [ ],
+                  "label" : "Image"
+                }
+              },
+              "image_title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Image Title"
+                }
+              },
+              "image_description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Image Description"
+                }
+              }
+            }
+          },
+          "meet_the_team" : {
+            "type" : "Slice",
+            "fieldset" : "Meet The Team",
+            "description" : "Add in section for meet the team.",
+            "icon" : "people",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : { }
+          },
+          "classes_timetable" : {
+            "type" : "Slice",
+            "fieldset" : "Classes Timetable",
+            "description" : "The full timetable for classes.",
+            "icon" : "perm_contact_calendar",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : { }
+          },
+          "prices" : {
+            "type" : "Slice",
+            "fieldset" : "Prices",
+            "description" : "Show prices section.",
+            "icon" : "attach_money",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : { }
+          },
+          "facilities" : {
+            "type" : "Slice",
+            "fieldset" : "Facilities",
+            "description" : "Show facilities listing.",
+            "icon" : "directions_run",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : { }
+          },
+          "benefits" : {
+            "type" : "Slice",
+            "fieldset" : "Benefits",
+            "description" : "Show benefits.",
+            "icon" : "spellcheck",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : { }
+          },
+          "google_reviews" : {
+            "type" : "Slice",
+            "fieldset" : "Google Reviews",
+            "description" : "Return Google Reviews.",
+            "icon" : "stars",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : { }
+          }
+        }
+      }
+    }
+  },
+  "SEO" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "Unique ID",
+        "placeholder" : "Type an SEO-friendly identifier..."
+      }
+    },
+    "meta_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Meta Title",
+        "placeholder" : "Meta title..."
+      }
+    },
+    "meta_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Meta Description",
+        "placeholder" : "Meta Description..."
+      }
+    }
+  }
+}
