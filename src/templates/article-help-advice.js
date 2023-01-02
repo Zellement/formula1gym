@@ -146,7 +146,7 @@ export const query = graphql`
         }
         featured_image {
           alt
-          fluid(imgixParams: { width: 500, height: 300 }) {
+          fluid {
             ...GatsbyPrismicImageFluid
           }
         }
