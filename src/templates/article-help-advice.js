@@ -46,6 +46,8 @@ const ArticlePage = ({ data }) => {
             <Hero
               pageTitle={post.data.page_title.text}
               pageIntro={post.data.page_intro?.text}
+              featuredImage={post.data.featured_image}
+              date={post.first_publication_date}
             />
           </motion.div>
         </motion.div>
@@ -66,6 +68,7 @@ export const query = graphql`
   query ($slug: String!) {
     prismicHelpAdvice(uid: { eq: $slug }) {
       id
+      first_publication_date(formatString: "DD/MM/YYYY")
       data {
         page_content {
           ... on PrismicHelpAdvicePageContentMeetTheTeam {
@@ -126,6 +129,12 @@ export const query = graphql`
         }
         page_title {
           text
+        }
+        featured_image {
+          alt
+          fluid(imgixParams: { width: 500, height: 300 }) {
+            ...GatsbyPrismicImageFluid
+          }
         }
         meta_description
         meta_title
