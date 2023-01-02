@@ -83,7 +83,11 @@ const CategoryPage = ({ data }) => {
                   </li>
                 )
               }
-              return null
+              return (
+                <li key="noarticle" className="md:col-span-2 xl:col-span-3">
+                  Sorry, no articles for this category yet
+                </li>
+              )
             })}
           </ul>
         </motion.div>
