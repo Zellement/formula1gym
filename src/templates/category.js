@@ -125,7 +125,7 @@ export const query = graphql`
         node {
           uid
           id
-          first_publication_date(formatString: "DD MM YYYY")
+          first_publication_date(formatString: "DD/MM/YYYY")
           data {
             category {
               uid

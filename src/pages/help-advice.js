@@ -28,6 +28,7 @@ const item = {
 
 const HelpAdvicePage = ({ data }) => {
   const post = data.allPrismicHelpAdvice.edges
+  const cats = data.allPrismicCategories
   return (
     <>
       <SEO
@@ -46,6 +47,7 @@ const HelpAdvicePage = ({ data }) => {
           <Hero
             pageTitle={"Help & Advice Centre"}
             pageIntro={"Read some of our useful opinions and tips"}
+            categories={cats}
           />
         </motion.div>
         <motion.section
@@ -125,6 +127,18 @@ export const query = graphql`
               fluid(maxHeight: 300) {
                 ...GatsbyPrismicImageFluid
               }
+            }
+          }
+        }
+      }
+    }
+    allPrismicCategories {
+      edges {
+        node {
+          uid
+          data {
+            category_title {
+              text
             }
           }
         }

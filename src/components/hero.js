@@ -4,6 +4,7 @@ import { GiTicket } from "react-icons/gi"
 import Img from "gatsby-image"
 import { AiFillCalendar } from "react-icons/ai"
 import Logo from "../components/logo"
+import { Link } from "gatsby"
 
 const item = {
   hidden: { y: -40, opacity: 0 },
@@ -13,8 +14,7 @@ const item = {
   },
 }
 
-const Hero = ({ pageTitle, pageIntro, showStars, date, featuredImage }) => {
-  console.log(featuredImage)
+const Hero = ({ pageTitle, pageIntro, showStars, date, categories }) => {
   return (
     <div className="flex flex-col p-8 text-white w-100">
       {showStars ? (
@@ -36,29 +36,20 @@ const Hero = ({ pageTitle, pageIntro, showStars, date, featuredImage }) => {
           {pageIntro}
         </motion.p>
       </div>
-      {date ? (
-        <div className="grid w-full max-w-screen-md grid-cols-2 mx-auto mt-8">
-          {featuredImage ? (
-            <div className="flex w-full">
-              <Img className="w-full" fluid={featuredImage.fluid} />
-            </div>
-          ) : null}
-          {date ? (
-            <motion.div
-              className="p-8 md:my-auto text-orange-semidark"
-              variants={item}
-              transition="easeInOut"
-            >
-              <p className="mb-2 text-white">Written by</p>
-              <Logo />
-
-              <p className="flex flex-row items-center gap-2 mt-8">
-                <AiFillCalendar />
-                {date}
-              </p>
-            </motion.div>
-          ) : null}
-        </div>
+      {categories ? (
+        <ul className="flex flex-row flex-wrap items-center justify-center gap-2 mt-4">
+          {categories.edges.map((edge) => {
+            console.log(edge)
+            return (
+              <Link
+                className="p-1 px-2 text-sm text-white transition-all duration-300 border border-current rounded-full hover:text-orange-semidark"
+                to={`/help-advice/category/${edge.node.uid}/`}
+              >
+                {edge.node.data.category_title.text}
+              </Link>
+            )
+          })}
+        </ul>
       ) : null}
     </div>
   )
