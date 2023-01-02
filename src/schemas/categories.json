@@ -1,0 +1,40 @@
+{
+  "Main" : {
+    "category_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label" : "Category Title"
+      }
+    },
+    "category_intro" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label" : "Category Intro"
+      }
+    }
+  },
+  "SEO" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "Unique ID"
+      }
+    },
+    "meta_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label" : "Meta Title"
+      }
+    },
+    "meta_description" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label" : "Meta Description"
+      }
+    }
+  }
+}

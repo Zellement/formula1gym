@@ -74,6 +74,7 @@ module.exports = {
           meet_the_team: require("./src/schemas/meet_the_team.json"),
           help__advice: require("./src/schemas/help__advice.json"),
           page: require("./src/schemas/page.json"),
+          categories: require("./src/schemas/categories.json"),
           site_specific: require("./src/schemas/site_specific.json"),
         },
       },

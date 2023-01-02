@@ -56,15 +56,16 @@ const HelpAdvicePage = ({ data }) => {
         >
           <ul className="grid grid-cols-1 gap-8 px-8 py-16 md:grid-cols-2 xl:grid-cols-3">
             {post.map((edge) => {
+              console.log(edge.node.data.category.document.data.category_title)
               return (
-                <li key={edge.node.id}>
+                <li key={edge.node.id} className="relative">
                   <Link
                     className="flex flex-col gap-8 p-8 transition-all duration-300 border-t-2 shadow-lg hover:border-blue border-orange hover:shadow-xl"
                     to={`/help-advice/${edge.node.uid}/`}
                   >
                     <Img
                       className="flex w-full h-40"
-                      fixed={edge.node.data.featured_image?.fluid}
+                      fluid={edge.node.data.featured_image?.fluid}
                     />
                     <div className="flex flex-col">
                       <h2>{edge.node.data.page_title.text}</h2>
@@ -73,6 +74,12 @@ const HelpAdvicePage = ({ data }) => {
                         <span>{edge.node.first_publication_date}</span>
                       </span>
                     </div>
+                  </Link>
+                  <Link
+                    className="absolute bottom-0 right-0 z-10 p-2 mb-4 mr-4 text-xs text-white transition-all duration-300 rounded-full bg-orange hover:bg-blue"
+                    to={`/help-advice/${edge.node.data.category.uid}/`}
+                  >
+                    {edge.node.data.category.document.data.category_title.text}
                   </Link>
                 </li>
               )
@@ -99,6 +106,19 @@ export const query = graphql`
           data {
             page_title {
               text
+            }
+            category {
+              uid
+              document {
+                ... on PrismicCategories {
+                  id
+                  data {
+                    category_title {
+                      text
+                    }
+                  }
+                }
+              }
             }
             featured_image {
               alt

@@ -23,6 +23,16 @@
         "label": "Featured Image"
       }
     },
+    "category": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": [
+          "categories"
+        ],
+        "label": "Category"
+      }
+    },
     "page_content" : {
       "type" : "Slices",
       "fieldset" : "Slice zone",
