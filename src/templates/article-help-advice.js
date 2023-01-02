@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
-import Hero from "../components/hero"
+import HeroArticle from "../components/hero-article"
 import SliceZone from "../components/slicezone"
 import ReadyToBegin from "../components/ready-to-begin"
 
@@ -43,11 +43,12 @@ const ArticlePage = ({ data }) => {
           transition="easeInOut"
         >
           <motion.div className="container" variants={container}>
-            <Hero
+            <HeroArticle
               pageTitle={post.data.page_title.text}
               pageIntro={post.data.page_intro?.text}
               featuredImage={post.data.featured_image}
               date={post.first_publication_date}
+              category={post.data.category}
             />
           </motion.div>
         </motion.div>
@@ -70,6 +71,19 @@ export const query = graphql`
       id
       first_publication_date(formatString: "DD/MM/YYYY")
       data {
+        category {
+          uid
+          document {
+            ... on PrismicCategories {
+              id
+              data {
+                category_title {
+                  text
+                }
+              }
+            }
+          }
+        }
         page_content {
           ... on PrismicHelpAdvicePageContentMeetTheTeam {
             id
