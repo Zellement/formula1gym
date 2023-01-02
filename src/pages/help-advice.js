@@ -77,7 +77,7 @@ const HelpAdvicePage = ({ data }) => {
                   </Link>
                   <Link
                     className="absolute bottom-0 right-0 z-10 p-2 mb-4 mr-4 text-xs text-white transition-all duration-300 rounded-full bg-orange hover:bg-blue"
-                    to={`/help-advice/${edge.node.data.category.uid}/`}
+                    to={`/help-advice/category/${edge.node.data.category.uid}/`}
                   >
                     {edge.node.data.category.document.data.category_title.text}
                   </Link>

@@ -17,6 +17,14 @@ exports.createPages = async function ({ actions, graphql }) {
           }
         }
       }
+      allPrismicCategories {
+        edges {
+          node {
+            id
+            uid
+          }
+        }
+      }
     }
   `)
   data.allPrismicPage.edges.forEach((edge) => {
@@ -31,6 +39,14 @@ exports.createPages = async function ({ actions, graphql }) {
     actions.createPage({
       path: `help-advice/${edge.node.uid}/`,
       component: require.resolve(`./src/templates/article-help-advice.js`),
+      context: { slug: edge.node.uid },
+    })
+  })
+
+  data.allPrismicCategories.edges.forEach((edge) => {
+    actions.createPage({
+      path: `help-advice/category/${edge.node.uid}/`,
+      component: require.resolve(`./src/templates/category.js`),
       context: { slug: edge.node.uid },
     })
   })

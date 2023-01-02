@@ -45,7 +45,7 @@ const ArticlePage = ({ data }) => {
           <motion.div className="container" variants={container}>
             <Hero
               pageTitle={post.data.page_title.text}
-              pageIntro={post.data.page_intro.text}
+              pageIntro={post.data.page_intro?.text}
             />
           </motion.div>
         </motion.div>
