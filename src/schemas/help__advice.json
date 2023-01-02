@@ -15,6 +15,14 @@
         "label" : "Page Intro"
       }
     },
+    "featured_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Featured Image"
+      }
+    },
     "page_content" : {
       "type" : "Slices",
       "fieldset" : "Slice zone",
