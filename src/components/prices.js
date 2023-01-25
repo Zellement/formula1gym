@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Benefits from "./benefits"
 import JoinNow from "../components/buttons/join-now"
 import { GiStarsStack } from "react-icons/gi"
-import { FaRegCheckCircle } from "react-icons/fa"
+// import { FaRegCheckCircle } from "react-icons/fa"
 
 const Prices = () => {
   const data = useStaticQuery(graphql`

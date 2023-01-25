@@ -17,7 +17,7 @@ export default class SliceZone extends Component {
       return (
         <>
           {allSlices.map((slice, index) => {
-            switch (slice.slice_type) {
+            switch (slice?.slice_type) {
               case "text___gallery":
                 return (
                   <div key={index} className="container p-8 lg:p-12">
@@ -56,14 +56,17 @@ export default class SliceZone extends Component {
                 return (
                   <div className="container p-8 lg:p-12" key={index}>
                     <HTMLContent
-                      className="content"
+                      className="max-w-screen-sm mx-auto content"
                       content={slice.primary.rich_text.html}
                     />
                   </div>
                 )
               case "benefits":
                 return (
-                  <div key={index} className="text-white gradient-orange--vertical">
+                  <div
+                    key={index}
+                    className="text-white gradient-orange--vertical"
+                  >
                     <div className="container p-8">
                       <Benefits showTitle={true} />
                     </div>
@@ -71,7 +74,9 @@ export default class SliceZone extends Component {
                 )
               case "facilities":
                 return (
-                  <div key={index}><Facilities /></div>
+                  <div key={index}>
+                    <Facilities />
+                  </div>
                 )
               case "prices":
                 return (

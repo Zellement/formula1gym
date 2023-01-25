@@ -70,16 +70,19 @@ Navigation
 }
 
 .navigation-wrapper__list-item {
-	@apply flex;
+	@apply flex flex-col ;
+	@screen xl {
+		@apply items-center;
+	}
 }
 
 .navigation-wrapper__link {
-	@apply flex flex-1 px-1 py-1 my-auto font-bold text-center text-white;
+	@apply flex flex-row gap-1 px-1 py-1 my-auto font-bold text-center text-white ;
 	@screen lg {
 		@apply tracking-tight;
 	}
 	@screen xl {
-		@apply px-2 text-sm tracking-normal;
+		@apply flex-col self-center gap-0 px-3 my-auto text-sm tracking-normal;
 	}
 	&:hover {
 		@apply underline;
