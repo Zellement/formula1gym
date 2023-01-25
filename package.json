@@ -24,7 +24,7 @@
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-plugin-sitemap": "^2.9.0",
     "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-source-google-places": "0.0.7",
+    "gatsby-source-google-places": "1.0.2",
     "gatsby-source-prismic": "^3.0.0",
     "gatsby-transformer-sharp": "^2.4.3",
     "npm-check-updates": "^4.1.0",
