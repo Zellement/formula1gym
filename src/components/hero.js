@@ -1,9 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { GiTicket } from "react-icons/gi"
-import Img from "gatsby-image"
-import { AiFillCalendar } from "react-icons/ai"
-import Logo from "../components/logo"
 import { Link } from "gatsby"
 
 const item = {
@@ -39,9 +36,9 @@ const Hero = ({ pageTitle, pageIntro, showStars, date, categories }) => {
       {categories ? (
         <ul className="flex flex-row flex-wrap items-center justify-center gap-2 mt-4">
           {categories.edges.map((edge) => {
-            console.log(edge)
             return (
               <Link
+                key={edge.node.uid}
                 className="p-1 px-2 text-sm text-white transition-all duration-300 border border-current rounded-full hover:text-orange-semidark"
                 to={`/help-advice/category/${edge.node.uid}/`}
               >

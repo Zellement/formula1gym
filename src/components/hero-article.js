@@ -20,7 +20,6 @@ const HeroArticle = ({
   featuredImage,
   category,
 }) => {
-  console.log(featuredImage)
   return (
     <div className="flex flex-col p-8 w-100 lg:pb-16">
       <div className="grid w-full grid-cols-1 mx-auto mt-8 text-white md:gap-16 md:grid-cols-2">

@@ -27,7 +27,6 @@ const item = {
 
 const ArticlePage = ({ data }) => {
   const post = data.prismicHelpAdvice
-  console.log(post)
 
   return (
     <>

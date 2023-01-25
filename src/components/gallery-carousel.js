@@ -1,16 +1,19 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
-import EmblaCarouselReact from 'embla-carousel-react'
-import { motion } from 'framer-motion'
-import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from 'react-icons/io'
+import EmblaCarouselReact from "embla-carousel-react"
+import { motion } from "framer-motion"
+import {
+  IoIosArrowDroprightCircle,
+  IoIosArrowDropleftCircle,
+} from "react-icons/io"
 
 const duration = 0.1
 
 const container = {
   visible: {
     transition: {
-      when: 'beforeChildren',
+      when: "beforeChildren",
       staggerChildren: 0.05,
       delayChildren: duration,
     },
@@ -20,23 +23,23 @@ const item = {
   hidden: { y: 10, opacity: 0 },
   visible: {
     y: 0,
-    opacity: 1
+    opacity: 1,
   },
 }
 
 class GalleryCarousel extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       images: props.images,
       isLoading: true,
-    };
+    }
   }
 
   componentDidMount() {
     this.setState({
-      isLoading: false
+      isLoading: false,
     })
   }
 
@@ -49,22 +52,21 @@ class GalleryCarousel extends Component {
             initial="hidden"
             animate="visible"
           >
-			  {/* {console.log(this.state.images)} */}
             <div className="relative shadow-xl">
               <EmblaCarouselReact
-                emblaRef={c => (this.embla = c)}
+                emblaRef={(c) => (this.embla = c)}
                 htmlTagName={`div`}
                 options={{
-                  align: 'start',
+                  align: "start",
                   slidesToScroll: 1,
                   draggable: true,
                   loop: true,
-                  speed: 8
+                  speed: 8,
                 }}
                 className="embla-viewport"
               >
                 <div className="max-w-full embla__container">
-                  {this.state.images.map((image, index) =>
+                  {this.state.images.map((image, index) => (
                     <motion.div
                       key={index}
                       variants={item}
@@ -78,9 +80,11 @@ class GalleryCarousel extends Component {
                         alt={image.image.alt}
                         className="block w-full"
                       />
-                      <span className="absolute bottom-0 right-0 z-20 p-1 text-sm text-black bg-white">{('0' + (index + 1)).slice(-2)}</span>
+                      <span className="absolute bottom-0 right-0 z-20 p-1 text-sm text-black bg-white">
+                        {("0" + (index + 1)).slice(-2)}
+                      </span>
                     </motion.div>
-                  )}
+                  ))}
                 </div>
               </EmblaCarouselReact>
               <motion.button
@@ -104,8 +108,8 @@ class GalleryCarousel extends Component {
             </div>
           </motion.section>
         ) : (
-            <p>Loading images&hellip;</p>
-          )}
+          <p>Loading images&hellip;</p>
+        )}
       </>
     )
   }

@@ -29,7 +29,6 @@ const item = {
 const CategoryPage = ({ data }) => {
   const post = data.prismicCategories
   const articles = data.allPrismicHelpAdvice
-  console.log(post)
 
   return (
     <>
@@ -59,8 +58,17 @@ const CategoryPage = ({ data }) => {
           className="container"
         >
           <ul className="grid grid-cols-1 gap-8 px-8 py-16 md:grid-cols-2 xl:grid-cols-3">
+            {console.log(articles.edges)}
+            {articles.edges.length > 0 ? null : (
+              <li>
+                Sorry, no posts for this category yet. Check back soon!{" "}
+                <Link className="underline" to="/">
+                  Please return to the homepage.
+                </Link>
+              </li>
+            )}
+
             {articles.edges.map((edge) => {
-              console.log(edge.node)
               if (edge.node.data.category.uid === post.uid) {
                 return (
                   <li key={edge.node.id} className="relative">
@@ -82,12 +90,7 @@ const CategoryPage = ({ data }) => {
                     </Link>
                   </li>
                 )
-              }
-              return (
-                <li key="noarticle" className="md:col-span-2 xl:col-span-3">
-                  Sorry, no articles for this category yet
-                </li>
-              )
+              } else return null
             })}
           </ul>
         </motion.div>
@@ -120,7 +123,9 @@ export const query = graphql`
         }
       }
     }
-    allPrismicHelpAdvice {
+    allPrismicHelpAdvice(
+      filter: { data: { category: { slug: { eq: $slug } } } }
+    ) {
       edges {
         node {
           uid
