@@ -68,7 +68,7 @@ const Nav = class extends React.Component {
                 Sunbeds
               </Link>
             </li>
-            <li className="navigation-wrapper__list-item">
+            {/* <li className="navigation-wrapper__list-item">
               <Link
                 className="navigation-wrapper__link"
                 onClick={this.toggleMenu}
@@ -77,7 +77,7 @@ const Nav = class extends React.Component {
               >
                 Sports <span>Massage</span>
               </Link>
-            </li>
+            </li> */}
             <li className="navigation-wrapper__list-item">
               <Link
                 className="navigation-wrapper__link"
