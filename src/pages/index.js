@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
 import HowItWorks from "../components/how-it-works"
@@ -7,7 +7,7 @@ import HeroIndex from "../components/hero-index"
 import ReadyToBegin from "../components/ready-to-begin"
 import GalleryCarousel from "../components/gallery-carousel"
 import { HTMLContent } from "../components/content"
-// import { GiStarsStack } from "react-icons/gi"
+import { GiStarsStack } from "react-icons/gi"
 
 const duration = 0.35
 
@@ -45,7 +45,7 @@ const IndexPage = ({ data }) => {
           <HeroIndex />
         </motion.div>
 
-        {/* <motion.div
+        <motion.div
           className="p-8 mb-2 text-center text-white shadow-lg bg-hotpink-500"
           variants={item}
           transition="easeInOut"
@@ -54,13 +54,14 @@ const IndexPage = ({ data }) => {
             <p className="flex flex-col md:flex-row md:items-center md:justify-center">
               <GiStarsStack className="inline mx-auto text-5xl md:mx-0 text-yellow" />
               <span className="m-0 text-lg font-bold leading-tight uppercase">Student Offer</span>
-              <span className="mx-2 my-0 leading-tight">£120 until July 2023!</span>
+              <span className="mx-2 my-0 leading-tight">£120 until June 2024!</span>
               <span className="m-0 mx-4 text-sm leading-tight opacity-75">Available for a limited time only.</span>
-            </p> 
+            </p>
+            <p className="italic">That's just £14 per month!</p>
 
 			      <Link className="inline-block mt-4 btn btn-hotpink-700" to="/prices/">Find Out More</Link>
 
-        </motion.div> */}
+        </motion.div>
 
         <motion.div
           className="container"
