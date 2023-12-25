@@ -32,8 +32,8 @@ const HelpAdvicePage = ({ data }) => {
   return (
     <>
       <SEO
-        title="Gym Nottingham City Centre | Formula One Gym"
-        description="No joining fee or contract, just £22pm. Our independant Nottingham gym offers free weights, resistance machines, cardio machines, classes, saunas and sunbeds. See our website to find out more!"
+        title="Help & Advice Centre | Formula One Gym"
+        description="Visit the Formula One Gym Help & Advice Centre for useful information including posts on exercises and sunbed tanning from your friendly Nottingham team."
       />
 
       <h1 className="sr-only">Help &amp; Advice Centre</h1>

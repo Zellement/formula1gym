@@ -41,10 +41,10 @@ const Footer = () => {
             <strong>Discounted Parking</strong>
           </p>
           <ul>
-            <li>Up to 60 mins - £1</li>
-            <li>90 mins - £1.50</li>
-            <li>2 hours - £2</li>
-            <li>3 hours - £3</li>
+            <li>Up to 60 mins - £2</li>
+            <li>90 mins - £2.50</li>
+            <li>2 hours - £3.50</li>
+            <li>4 hours - £5</li>
           </ul>
 
           <p className="mt-4">
