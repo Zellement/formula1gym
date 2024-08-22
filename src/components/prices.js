@@ -77,24 +77,34 @@ const Prices = () => {
 
       {/* Student offer */}
 
-      {/* <div className="container flex flex-col max-w-5xl mb-10 text-white md:flex-row">
+      <div className="container flex flex-col max-w-5xl mb-10 text-white md:flex-row">
         <div className="relative flex flex-col w-5/6 p-4 mx-auto text-center text-white rounded-lg shadow-xl gradient-hotpink--vertical md:rounded-br-none md:justify-center md:rounded-tr-none md:w-1/3">
-          <span className="block leading-tight">Student<br />Term Time Special</span>
+          <span className="block leading-tight">
+            <strong>Student</strong>
+            <br />
+            Term Time Special
+          </span>
           <span className="">
             <span className="-mt-4 text-2xl">£</span>
             <span className="m-0 font-bold leading-none text-white text-7xl lg:text-9xl text-shadow-lg">
-              120
+              135
             </span>
             <span className="block m-0 text-3xl font-bold leading-tight lg:text-3xl text-shadow-lg">
-              Until June 2024*
+              Until June 2025*
             </span>
           </span>
           <span className="block mt-8 leading-tight opacity-75">
-            That works out at around £14 a month!**
+            That works out at around £16 a month!**
           </span>
-          <div className="absolute top-0 right-0 flex flex-col justify-center p-1 -mt-4 -mr-12 bg-gray-200 rounded-lg shadow max-w-90 sm:-mr-2 md:left-0 md:right-inherit lg:-ml-4 md:ml-2 md:mr-0 md:-mt-12 lg:-mt-4">
+          {/* <div className="absolute top-0 right-0 flex flex-col justify-center p-1 -mt-4 -mr-12 bg-gray-200 rounded-lg shadow max-w-90 sm:-mr-2 md:left-0 md:right-inherit lg:-ml-4 md:ml-2 md:mr-0 md:-mt-12 lg:-mt-4">
             <GiStarsStack className="block mx-auto text-4xl text-yellow" />
             <span className="text-xs text-gray-600">Popular for Students</span>
+          </div> */}
+          <div className="absolute top-0 right-0 flex flex-col justify-center p-2 -mt-4 -mr-12 bg-hotpink-700 text-yellow rounded-lg shadow max-w-90 sm:-mr-2 md:left-0 md:right-inherit lg:-ml-4 md:ml-2 md:mr-0 md:-mt-12 lg:-mt-4">
+            <span className="text-3xl flex flex-col font-bold">
+              <span className="leading-none">30%</span>
+              <span className="text-base">Discount</span>
+            </span>
           </div>
         </div>
         <div className="p-3 pt-6 pb-3 -mt-4 rounded-lg gradient-dark-grey--vertical md:m-0 md:p-8 md:rounded-bl-none md:rounded-tl-none md:w-2/3">
@@ -103,43 +113,53 @@ const Prices = () => {
           </p>
           <ul className="flex flex-row flex-wrap">
             <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />5 minute walk from NTU city campus
+              <FaRegCheckCircle className="inline mr-2" />5 minute walk from NTU
+              city campus
             </li>
             <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />No joining fee
+              <FaRegCheckCircle className="inline mr-2" />
+              No joining fee
             </li>
             <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />Never over-crowded
+              <FaRegCheckCircle className="inline mr-2" />
+              Never over-crowded
             </li>
             <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />Women only floor
+              <FaRegCheckCircle className="inline mr-2" />
+              Women only floor
             </li>
             <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />Large free weights area
+              <FaRegCheckCircle className="inline mr-2" />
+              Large free weights area
             </li>
             <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />Sunbeds
+              <FaRegCheckCircle className="inline mr-2" />
+              Sunbeds
             </li>
             <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />Free body composition
+              <FaRegCheckCircle className="inline mr-2" />
+              Free body composition
             </li>
             <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />Free personalised programme
+              <FaRegCheckCircle className="inline mr-2" />
+              Free personalised programme
             </li>
             <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />Free classes
+              <FaRegCheckCircle className="inline mr-2" />
+              Free classes
             </li>
           </ul>
           <p className="block mt-4 text-sm leading-tight opacity-75">
-            *Single upfront payment<br />
+            *Single upfront payment
+            <br />
             **Dependent on when you join
           </p>
         </div>
-      </div> 
+      </div>
 
-      <div className="flex justify-center block mt-6 mb-8">
+      <div className="flex justify-center  mt-6 mb-8">
         <JoinNow />
-      </div>  */}
+      </div>
 
       <div className="">
         <h2 className="block mb-4 text-2xl text-center">Upfront Memberships</h2>

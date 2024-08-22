@@ -34,7 +34,8 @@ const IndexPage = ({ data }) => {
     <>
       <SEO
         title="Gym Nottingham City Centre | Formula One Gym"
-        description="No joining fee or contract, just £24pm. Our independant Nottingham gym offers free weights, resistance machines, cardio machines, classes, saunas and sunbeds. See our website to find out more!" />
+        description="No joining fee or contract, just £24pm. Our independant Nottingham gym offers free weights, resistance machines, cardio machines, classes, saunas and sunbeds. See our website to find out more!"
+      />
 
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.div
@@ -45,23 +46,34 @@ const IndexPage = ({ data }) => {
           <HeroIndex />
         </motion.div>
 
-        {/* <motion.div
-          className="p-8 mb-2 text-center text-white shadow-lg bg-hotpink-500"
+        <motion.div
+          className="p-8 mb-2 text-center flex flex-col items-center text-white shadow-lg bg-hotpink-500"
           variants={item}
           transition="easeInOut"
         >
-
-            <p className="flex flex-col md:flex-row md:items-center md:justify-center">
-              <GiStarsStack className="inline mx-auto text-5xl md:mx-0 text-yellow" />
-              <span className="m-0 text-lg font-bold leading-tight uppercase">Student Offer</span>
-              <span className="mx-2 my-0 leading-tight">£120 until June 2024!</span>
-              <span className="m-0 mx-4 text-sm leading-tight opacity-75">Available for a limited time only.</span>
-            </p>
-            <p className="italic">That's just £14 per month!</p>
-
-			      <Link className="inline-block mt-4 btn btn-hotpink-700" to="/prices/">Find Out More</Link>
-
-        </motion.div> */}
+          <p className="flex flex-col gap-2">
+            <span className="m-0 text-3xl font-bold leading-tight uppercase">
+              Student Offer
+            </span>
+            <div className="flex mx-auto flex-col justify-center p-2  bg-hotpink-700 text-yellow rounded-lg shadow max-w-90 ">
+              <span className="text-3xl flex flex-col font-bold">
+                <span className="leading-none">30%</span>
+                <span className="text-base">Discount</span>
+              </span>
+            </div>
+            {/* <GiStarsStack className=" mx-auto text-5xl text-yellow" /> */}
+            <span className="mx-2 my-0 leading-tight text-2xl">
+              £135 until June 2025!
+            </span>
+            {/* <span className="m-0 mx-4 text-sm leading-tight opacity-75">
+              30% discount term-time special.
+            </span> */}
+          </p>
+          <p className="italic">That's just £16 per month!</p>
+          <Link className="inline-block mt-4 btn btn-hotpink-700" to="/prices/">
+            Find Out More
+          </Link>
+        </motion.div>
 
         <motion.div
           className="container"
@@ -97,28 +109,27 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 export const query = graphql`
-query HomeQuery {
-  prismicHomepage {
-    data {
-      body {
-        ... on PrismicHomepageBodyTextGallery {
-          id
-          items {
-            image {
-              fluid {
-                ...GatsbyPrismicImageFluid
+  query HomeQuery {
+    prismicHomepage {
+      data {
+        body {
+          ... on PrismicHomepageBodyTextGallery {
+            id
+            items {
+              image {
+                fluid {
+                  ...GatsbyPrismicImageFluid
+                }
               }
             }
-          }
-          primary {
-            text {
-              html
+            primary {
+              text {
+                html
+              }
             }
           }
         }
       }
     }
   }
-}
-
 `
