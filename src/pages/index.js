@@ -52,22 +52,22 @@ const IndexPage = ({ data }) => {
           transition="easeInOut"
         >
           <p className="flex flex-col gap-2">
-            <span className="m-0 text-3xl font-bold leading-tight uppercase">
-              Student Offer
-            </span>
-            <div className="flex mx-auto flex-col justify-center p-2  bg-hotpink-700 text-yellow rounded-lg shadow max-w-90 ">
+            {/* <div className="flex mx-auto flex-col justify-center p-2  bg-hotpink-700 text-yellow rounded-lg shadow max-w-90 ">
               <span className="text-3xl flex flex-col font-bold">
                 <span className="leading-none">30%</span>
                 <span className="text-base">Discount</span>
               </span>
-            </div>
-            {/* <GiStarsStack className=" mx-auto text-5xl text-yellow" /> */}
+            </div> */}
+            <GiStarsStack className=" mx-auto text-5xl text-yellow" />
+            <span className="m-0 text-3xl font-bold leading-tight uppercase">
+              Student Offer
+            </span>
             <span className="mx-2 my-0 leading-tight text-2xl">
               £135 until June 2025!
             </span>
-            {/* <span className="m-0 mx-4 text-sm leading-tight opacity-75">
-              30% discount term-time special.
-            </span> */}
+            <span className="m-0 mx-4 text-sm leading-tight opacity-75">
+              Available for a limited-time only!
+            </span>
           </p>
           <p className="italic">That's just £16 per month!</p>
           <Link className="inline-block mt-4 btn btn-hotpink-700" to="/prices/">

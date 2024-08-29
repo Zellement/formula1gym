@@ -6,6 +6,19 @@ import { GiStarsStack } from "react-icons/gi"
 import { FaRegCheckCircle } from "react-icons/fa"
 
 const Prices = () => {
+  const studentBenefits = [
+    "5 minute walk from NTU city campus ",
+    "Never overcrowded ",
+    "Friendly atmosphere",
+    "Tidy gym floor",
+    "Large free weights area",
+    "Free body composition",
+    "Free personalised programme",
+    "Free classes",
+    "Women only floor",
+    "Sunbeds",
+  ]
+
   const data = useStaticQuery(graphql`
     query PricesQuery {
       allPrismicSiteSpecific {
@@ -61,7 +74,7 @@ const Prices = () => {
           <span className="block leading-tight">
             Direct Debit <span className="block">per month</span>
           </span>
-          <div className="absolute top-0 right-0 flex flex-col justify-center p-2 mr-1 -mt-4 bg-gray-200 rounded-lg shadow max-w-90 sm:mr-2 md:left-0 md:right-inherit lg:-ml-4 md:ml-2">
+          <div className="absolute top-0 right-0 flex flex-col justify-center p-1 -mt-4 -mr-12 bg-gray-200 rounded-lg shadow max-w-90 sm:-mr-2 md:left-0 md:right-inherit lg:-ml-4 md:ml-2 md:mr-0 md:-mt-12 lg:-mt-4">
             <GiStarsStack className="block mx-auto text-5xl text-yellow" />
             <span className="text-xs text-gray-600">Most popular</span>
           </div>
@@ -71,7 +84,7 @@ const Prices = () => {
         </div>
       </div>
 
-      <div className="flex justify-center block mt-6 mb-8">
+      <div className="justify-center flex mt-6 mb-8">
         <JoinNow />
       </div>
 
@@ -96,11 +109,11 @@ const Prices = () => {
           <span className="block mt-8 leading-tight opacity-75">
             That works out at around £16 a month!**
           </span>
-          {/* <div className="absolute top-0 right-0 flex flex-col justify-center p-1 -mt-4 -mr-12 bg-gray-200 rounded-lg shadow max-w-90 sm:-mr-2 md:left-0 md:right-inherit lg:-ml-4 md:ml-2 md:mr-0 md:-mt-12 lg:-mt-4">
+          <div className="absolute top-0 right-0 flex flex-col justify-center p-1 -mt-4 -mr-12 bg-gray-200 rounded-lg shadow max-w-90 sm:-mr-2 md:left-0 md:right-inherit lg:-ml-4 md:ml-2 md:mr-0 md:-mt-12 ">
             <GiStarsStack className="block mx-auto text-4xl text-yellow" />
             <span className="text-xs text-gray-600">Popular for Students</span>
-          </div> */}
-          <div className="absolute top-0 right-0 flex flex-col justify-center p-2 -mt-4 -mr-12 bg-hotpink-700 text-yellow rounded-lg shadow max-w-90 sm:-mr-2 md:left-0 md:right-inherit lg:-ml-4 md:ml-2 md:mr-0 md:-mt-12 lg:-mt-4">
+          </div>
+          <div className="absolute top-0 left-0 flex flex-col justify-center  -mt-4 -ml-12 bg-hotpink-700 p-3 rounded-lg shadow max-w-90 sm:-ml-2 md:left-0 md:ml-32 md:-mt-12 lg:ml-24">
             <span className="text-3xl flex flex-col font-bold">
               <span className="leading-none">30%</span>
               <span className="text-base">Discount</span>
@@ -112,42 +125,15 @@ const Prices = () => {
             Students can take advantage of the following benefits...
           </p>
           <ul className="flex flex-row flex-wrap">
-            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />5 minute walk from NTU
-              city campus
-            </li>
-            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />
-              No joining fee
-            </li>
-            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />
-              Never over-crowded
-            </li>
-            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />
-              Women only floor
-            </li>
-            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />
-              Large free weights area
-            </li>
-            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />
-              Sunbeds
-            </li>
-            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />
-              Free body composition
-            </li>
-            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />
-              Free personalised programme
-            </li>
-            <li className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1">
-              <FaRegCheckCircle className="inline mr-2" />
-              Free classes
-            </li>
+            {studentBenefits.map((benefit, index) => (
+              <li
+                key={index}
+                className="w-full text-xs md:w-full lg:w-1/2 sm:w-1/2 sm:text-sm md:text-base md:my-1"
+              >
+                <FaRegCheckCircle className="inline mr-2" />
+                {benefit}
+              </li>
+            ))}
           </ul>
           <p className="block mt-4 text-sm leading-tight opacity-75">
             *Single upfront payment
