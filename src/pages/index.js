@@ -46,18 +46,18 @@ const IndexPage = ({ data }) => {
           <HeroIndex />
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className="p-8 mb-2 text-center flex flex-col items-center text-white shadow-lg bg-hotpink-500"
           variants={item}
           transition="easeInOut"
         >
           <p className="flex flex-col gap-2">
-            {/* <div className="flex mx-auto flex-col justify-center p-2  bg-hotpink-700 text-yellow rounded-lg shadow max-w-90 ">
+            <div className="flex mx-auto flex-col justify-center p-2  bg-hotpink-700 text-yellow rounded-lg shadow max-w-90 ">
               <span className="text-3xl flex flex-col font-bold">
                 <span className="leading-none">30%</span>
                 <span className="text-base">Discount</span>
               </span>
-            </div> */}
+            </div> 
             <GiStarsStack className=" mx-auto text-5xl text-yellow" />
             <span className="m-0 text-3xl font-bold leading-tight uppercase">
               Student Offer
@@ -73,7 +73,7 @@ const IndexPage = ({ data }) => {
           <Link className="inline-block mt-4 btn btn-hotpink-700" to="/prices/">
             Find Out More
           </Link>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="container"
