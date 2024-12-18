@@ -150,7 +150,7 @@ const Prices = () => {
       <div className="">
         <h2 className="block mb-4 text-2xl text-center">Upfront Memberships</h2>
         <div className="p-8 mb-4 bg-gray-100 rounded-lg">
-          <h3 className="block m-0 text-xl text-center">Regular Prices</h3>
+          {/* <h3 className="block m-0 text-xl text-center">Regular Prices</h3> */}
           <p className="block mb-4 text-center">
             Choose an amount of time and pay upfront for your membership
           </p>
