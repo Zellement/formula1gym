@@ -67,5 +67,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/zellement/formula1gym"
+  },
+  "resolutions": {
+    "sharp": "0.28.3"
   }
 }
